@@ -90,6 +90,8 @@ header{position:relative;overflow:hidden;color:#fff;text-align:center;padding:5.
 header h1{font-size:clamp(2.6rem,8vw,4.6rem);margin:.4rem 0 .3rem;text-shadow:0 2px 14px rgba(120,40,20,.35)}
 .tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(1.15rem,3.5vw,1.5rem);text-shadow:0 1px 8px rgba(120,40,20,.4)}
 .sub-h1{font-size:clamp(.95rem,2.6vw,1.1rem);font-weight:600;margin-top:.7rem;opacity:.95;text-shadow:0 1px 6px rgba(120,40,20,.4)}
+.igico{width:1.05em;height:1.05em;vertical-align:-0.18em;margin-right:.4em}
+.tmap{width:100%;border-radius:1rem;margin-top:1.6rem;display:block;border:1px solid var(--line)}
 .ig-pill{display:inline-block;margin-top:1rem;background:rgba(255,255,255,.18);border:1.5px solid rgba(255,255,255,.8);backdrop-filter:blur(6px);color:#fff;font-weight:800;border-radius:2rem;padding:.5rem 1.25rem;text-decoration:none;font-size:1rem}
 .ig-nav{font-size:1.2rem;text-decoration:none}
 .hero-cta{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin:1.5rem 0 3.2rem}
@@ -194,7 +196,7 @@ footer a{color:var(--mango)}
       <button data-lang="fr">FR</button>
       <button data-lang="de">DE</button>
     </div>
-    <a class="ig-nav" href="https://www.instagram.com/themangoavenue" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+    <a class="ig-nav" href="https://www.instagram.com/themangoavenue" target="_blank" rel="noopener" aria-label="Instagram" style="color:var(--ocean-deep)"><svg class="igico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.5" fill="currentColor"/></svg></a>
     <a class="wa-nav" data-wa="wa_general" data-i18n="nav_book" href="#">Book on WhatsApp</a>
   </div>
 </nav>
@@ -206,7 +208,7 @@ footer a{color:var(--mango)}
     <p class="kicker" data-i18n="hero_kicker">surf • coffee • wine</p>
     <h1>Mango Avenue</h1>
     <p class="tagline" data-i18n="hero_tagline">Love God, Love People, Surf.</p>
-    <a class="ig-pill" href="https://www.instagram.com/themangoavenue" target="_blank" rel="noopener">📷 @themangoavenue</a>
+    <a class="ig-pill" href="https://www.instagram.com/themangoavenue" target="_blank" rel="noopener"><svg class="igico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.5" fill="currentColor"/></svg>@themangoavenue</a>
     <p class="sub-h1" data-i18n="hero_sub">Surf shop, board rentals &amp; coffee in the heart of El Tunco, El Salvador</p>
     <p class="hero-ig" style="margin-top:.5rem;font-size:1.05rem"><a href="https://www.instagram.com/themangoavenue" rel="noopener" style="color:inherit;text-decoration:none;font-weight:700">@themangoavenue</a></p>
     <div class="hero-cta">
@@ -416,7 +418,7 @@ footer a{color:var(--mango)}
     <p class="lead" data-i18n="su_p">Swell alerts, events, tastings and new boards — be the first to know.</p>
     <div class="contact-links">
       <a data-wa="wa_general" href="#">💬 WhatsApp +503 6014 7218</a>
-      <a href="https://www.instagram.com/themangoavenue" target="_blank" rel="noopener">📷 @themangoavenue</a>
+      <a href="https://www.instagram.com/themangoavenue" target="_blank" rel="noopener"><svg class="igico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.5" fill="currentColor"/></svg>@themangoavenue</a>
       <a href="#findus">📍 El Tunco · 6 AM – 8 PM</a>
     </div>
     <form class="board" id="signupForm" autocomplete="on">
@@ -446,6 +448,7 @@ footer a{color:var(--mango)}
     </div>
     <img class="findus-photo" src="img/mira.jpg" alt="Matcha from Mango Avenue in front of the Mira Surf sign — the landmark across from the shop in El Tunco">
     </div>
+    <img class="tmap" src="img/treasure-map.svg" alt="Hand-drawn treasure map: Mango Avenue surf shop to La Bocana (45-second walk) and El Sunzal (10-minute walk) in El Tunco">
     <div class="mapwrap"><iframe src="https://www.google.com/maps?q=El+Tunco,+La+Libertad,+El+Salvador&output=embed" loading="lazy" title="Map of El Tunco, El Salvador" allowfullscreen></iframe></div>
     <p style="margin-top:.9rem"><a class="btn" style="background:var(--ocean-deep);color:#fff" data-i18n="fu_map_btn" href="https://www.google.com/maps/dir/?api=1&destination=Playa+El+Tunco,+La+Libertad,+El+Salvador" target="_blank" rel="noopener">Get directions in Google Maps →</a></p>
   </div>
@@ -454,7 +457,7 @@ footer a{color:var(--mango)}
 <footer>
   <a class="brand" href="#top"><span class="dot"></span>MANGO AVENUE</a>
   <p data-i18n="ft_tag">surf • coffee • wine — Love God, Love People, Surf.</p>
-  <p style="margin-top:.6rem">WhatsApp <a href="https://wa.me/50360147218">+503 6014 7218</a> · <a href="https://www.instagram.com/themangoavenue" rel="noopener">@themangoavenue</a></p>
+  <p style="margin-top:.6rem">WhatsApp <a href="https://wa.me/50360147218">+503 6014 7218</a> · <a href="https://www.instagram.com/themangoavenue" rel="noopener"><svg class="igico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.5" fill="currentColor"/></svg>@themangoavenue</a></p>
   <p class="age-note" data-i18n="ft_age">Alcohol served and sold to guests of legal drinking age only. Please drink responsibly.</p>
   <p style="margin-top:.9rem;opacity:.6" data-i18n="ft_loc">El Tunco · Surf City · El Salvador</p>
 </footer>
