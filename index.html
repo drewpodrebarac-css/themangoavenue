@@ -108,6 +108,10 @@ img.ph{width:100%;height:170px;object-fit:cover;display:block}
 .feature ul{margin:.9rem 0 1.2rem 1.2rem}
 .feature li{margin:.3rem 0}
 .btn-mango{background:var(--mango);color:var(--ink)}
+.mapwrap{margin-top:1.6rem;border-radius:1rem;overflow:hidden;border:1px solid var(--line)}
+.mapwrap iframe{width:100%;height:340px;border:0;display:block}
+.feature-img{flex:1 1 300px}
+.feature-img img{width:100%;border-radius:1rem;display:block}
 
 /* about */
 .about{background:var(--sand)}
@@ -174,8 +178,8 @@ footer a{color:var(--mango)}
 <section id="services">
   <div class="in">
     <p class="sec-kicker" data-i18n="svc_kicker">What we do</p>
-    <h2 data-i18n="svc_h2">Everything you need for a day in the water — and after it</h2>
-    <p class="lead" data-i18n="svc_lead">One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, real Salvadoran coffee, and a glass of wine when the sun drops.</p>
+    <h2 data-i18n="svc_h2">Good waves, good coffee, good people — every single day</h2>
+    <p class="lead" data-i18n="svc_lead">Warm water and waves 365 days a year. One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, matcha and real Salvadoran coffee — and a glass of wine when the sun drops.</p>
     <div class="grid">
       <div class="card">
         <img class="ph" src="img/interior.jpg" alt="Surfboards, tees and gear inside Mango Avenue surf shop in El Tunco, El Salvador">
@@ -186,8 +190,7 @@ footer a{color:var(--mango)}
         </div>
       </div>
       <div class="card">
-        <!-- PHOTO SLOT: lesson in the whitewater -->
-        <div class="ph ph-2">🌊</div>
+        <img class="ph" src="img/lesson.jpg" alt="Group surf lesson lineup with boards on the beach in El Tunco, El Salvador">
         <div class="card-body">
           <h3 data-i18n="c2_h">Surf lessons</h3>
           <p data-i18n="c2_p">Learn to surf in El Tunco with local instructors who grew up on these waves — beginners welcome, private and group classes.</p>
@@ -195,8 +198,7 @@ footer a{color:var(--mango)}
         </div>
       </div>
       <div class="card">
-        <!-- PHOTO SLOT: surfer shot from the water -->
-        <div class="ph ph-3">📸</div>
+        <img class="ph" src="img/wave.jpg" alt="Surfer dropping into a perfect wave at El Tunco — surf photography by Mango Avenue">
         <div class="card-body">
           <h3 data-i18n="c3_h">Surf photography</h3>
           <p data-i18n="c3_p">A photographer shoots your session at El Tunco or El Sunzal. Leave with proof, not just stories.</p>
@@ -204,11 +206,10 @@ footer a{color:var(--mango)}
         </div>
       </div>
       <div class="card">
-        <!-- PHOTO SLOT: coffee at the bar, morning light -->
-        <div class="ph ph-4">☕</div>
+        <img class="ph" src="img/matcha.jpg" alt="Iced matcha latte at Mango Avenue café in El Tunco">
         <div class="card-body">
-          <h3 data-i18n="c4_h">Salvadoran coffee</h3>
-          <p data-i18n="c4_p">We open at 6 AM for dawn patrol. Coffee grown in these mountains, brewed steps from the beach.</p>
+          <h3 data-i18n="c4_h">Coffee &amp; matcha</h3>
+          <p data-i18n="c4_p">Open at 6 AM for dawn patrol. Salvadoran coffee and iced matcha, made steps from the beach — happiness in a cup.</p>
           <a data-wa="wa_general" data-i18n="c4_a" href="#">Ask what's brewing →</a>
         </div>
       </div>
@@ -247,6 +248,7 @@ footer a{color:var(--mango)}
       </ul>
       <a class="btn btn-mango" data-wa="wa_package" data-i18n="pkg_cta" href="#">Book the lesson + photo package</a>
     </div>
+    <div class="feature-img"><img src="img/shaka.jpg" alt="Surfer throwing a shaka at sunset on El Tunco beach"></div>
   </div>
 </section>
 
@@ -281,6 +283,8 @@ footer a{color:var(--mango)}
       <div class="step" data-i18n="fu_s3">Look up — if there's a mango tree above you, you've arrived.</div>
     </div>
     <p style="margin-top:1rem" data-i18n="fu_hours">Open every day, 6 AM to 8 PM. El Tunco, La Libertad, El Salvador.</p>
+    <div class="mapwrap"><iframe src="https://www.google.com/maps?q=El+Tunco,+La+Libertad,+El+Salvador&output=embed" loading="lazy" title="Map of El Tunco, El Salvador" allowfullscreen></iframe></div>
+    <p style="margin-top:.9rem"><a class="btn" style="background:var(--ocean-deep);color:#fff" data-i18n="fu_map_btn" href="https://www.google.com/maps/dir/?api=1&destination=Playa+El+Tunco,+La+Libertad,+El+Salvador" target="_blank" rel="noopener">Get directions in Google Maps →</a></p>
   </div>
 </section>
 
@@ -304,12 +308,12 @@ en:{
   hero_sub:"Surf shop, board rentals & coffee in the heart of El Tunco, El Salvador",
   hero_cta1:"Book a surf lesson", hero_cta2:"Rent a board",
   strip_hours:"Open daily 6 AM – 8 PM", strip_loc:"Town entrance, first shop on your right",
-  svc_kicker:"What we do", svc_h2:"Everything you need for a day in the water — and after it",
-  svc_lead:"One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, real Salvadoran coffee, and a glass of wine when the sun drops.",
+  svc_kicker:"What we do", svc_h2:"Good waves, good coffee, good people — every single day",
+  svc_lead:"Warm water and waves 365 days a year. One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, matcha and real Salvadoran coffee — and a glass of wine when the sun drops.",
   c1_h:"Surfboard rentals", c1_p:"Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board, the beach is right there.", c1_a:"Reserve a board →",
   c2_h:"Surf lessons", c2_p:"Learn to surf in El Tunco with local instructors who grew up on these waves — beginners welcome, private and group classes.", c2_a:"Book a lesson →",
   c3_h:"Surf photography", c3_p:"A photographer shoots your session at El Tunco or El Sunzal. Leave with proof, not just stories.", c3_a:"Book a photo session →",
-  c4_h:"Salvadoran coffee", c4_p:"We open at 6 AM for dawn patrol. Coffee grown in these mountains, brewed steps from the beach.", c4_a:"Ask what's brewing →",
+  c4_h:"Coffee & matcha", c4_p:"Open at 6 AM for dawn patrol. Salvadoran coffee and iced matcha, made steps from the beach — happiness in a cup.", c4_a:"Ask what's brewing →",
   c5_h:"Wine & spirits", c5_p:"A properly curated shelf of wine and spirits — chosen by the family behind one of the largest liquor stores in the Carolinas (USA).", c5_a:"See the shelf →",
   c6_h:"Surf merch & art", c6_p:"El Tunco tees, surf art and pieces you won't find in an airport gift shop. Take Surf City home.", c6_a:"Ask what's in store →",
   pkg_badge:"The Mango Avenue signature", pkg_kicker:"Lesson + photos", pkg_h2:"Surf it. Keep the proof.",
@@ -328,6 +332,7 @@ en:{
   fu_s2:"We're immediately on your RIGHT, next to the supermarket, in front of Mira Surf.",
   fu_s3:"Look up — if there's a mango tree above you, you've arrived.",
   fu_hours:"Open every day, 6 AM to 8 PM. El Tunco, La Libertad, El Salvador.",
+  fu_map_btn:"Get directions in Google Maps →",
   ft_tag:"surf • coffee • wine — From first light to last glass.",
   ft_age:"Alcohol served and sold to guests of legal drinking age only. Please drink responsibly.",
   ft_loc:"El Tunco · Surf City · El Salvador",
@@ -342,12 +347,12 @@ es:{
   hero_sub:"Surf shop, alquiler de tablas y café en el corazón de El Tunco, El Salvador",
   hero_cta1:"Reserva una clase de surf", hero_cta2:"Alquila una tabla",
   strip_hours:"Abierto todos los días 6 AM – 8 PM", strip_loc:"En la entrada del pueblo, primera tienda a tu derecha",
-  svc_kicker:"Qué hacemos", svc_h2:"Todo lo que necesitas para un día en el mar — y después",
-  svc_lead:"Una sola tienda en la entrada de El Tunco: tablas, clases, fotógrafo en el agua, café salvadoreño de verdad y una copa de vino cuando cae el sol.",
+  svc_kicker:"Qué hacemos", svc_h2:"Buenas olas, buen café, buena gente — todos los días",
+  svc_lead:"Agua cálida y olas los 365 días del año. Una sola tienda en la entrada de El Tunco: tablas, clases, fotógrafo en el agua, matcha y café salvadoreño de verdad — y una copa de vino cuando cae el sol.",
   c1_h:"Alquiler de tablas de surf", c1_p:"Shortboards, longboards y soft-tops, por hora o por día. Entra, agarra tu tabla — la playa está ahí mismo.", c1_a:"Reserva tu tabla →",
   c2_h:"Clases de surf", c2_p:"Aprende a surfear en El Tunco con instructores locales que crecieron en estas olas — principiantes bienvenidos, clases privadas y en grupo.", c2_a:"Reserva una clase →",
   c3_h:"Fotografía de surf", c3_p:"Un fotógrafo captura tu sesión en El Tunco o El Sunzal. Llévate pruebas, no solo historias.", c3_a:"Reserva una sesión →",
-  c4_h:"Café salvadoreño", c4_p:"Abrimos a las 6 AM para el dawn patrol. Café cultivado en estas montañas, servido a pasos de la playa.", c4_a:"Pregunta qué hay →",
+  c4_h:"Café y matcha", c4_p:"Abrimos a las 6 AM para el dawn patrol. Café salvadoreño y matcha helado, a pasos de la playa — felicidad en un vaso.", c4_a:"Pregunta qué hay →",
   c5_h:"Vinos y licores", c5_p:"Una selección de vinos y licores bien curada — elegida por la familia detrás de una de las licorerías más grandes de las Carolinas (EE.UU.).", c5_a:"Mira la selección →",
   c6_h:"Merch y arte de surf", c6_p:"Camisetas de El Tunco, arte de surf y piezas que no encontrarás en un aeropuerto. Llévate Surf City a casa.", c6_a:"Pregunta qué hay →",
   pkg_badge:"La firma de Mango Avenue", pkg_kicker:"Clase + fotos", pkg_h2:"Surfea. Llévate la prueba.",
@@ -366,6 +371,8 @@ es:{
   fu_s2:"Estamos inmediatamente a tu DERECHA, junto al supermercado, frente a Mira Surf.",
   fu_s3:"Mira hacia arriba — si hay un árbol de mango sobre ti, ya llegaste.",
   fu_hours:"Abierto todos los días de 6 AM a 8 PM. El Tunco, La Libertad, El Salvador.",
+  fu_map_btn:"Cómo llegar en Google Maps →",
+  fu_map_btn:"Itinéraire dans Google Maps →",
   ft_tag:"surf • café • vino — De la primera luz a la última copa.",
   ft_age:"Alcohol servido y vendido solo a mayores de edad. Bebe con responsabilidad.",
   ft_loc:"El Tunco · Surf City · El Salvador",
@@ -380,12 +387,12 @@ pt:{
   hero_sub:"Surf shop, aluguel de pranchas e café no coração de El Tunco, El Salvador",
   hero_cta1:"Reserve uma aula de surf", hero_cta2:"Alugue uma prancha",
   strip_hours:"Aberto todos os dias, 6h – 20h", strip_loc:"Na entrada da vila, primeira loja à sua direita",
-  svc_kicker:"O que fazemos", svc_h2:"Tudo o que você precisa para um dia no mar — e depois dele",
-  svc_lead:"Uma única loja na entrada de El Tunco: pranchas, aulas, fotógrafo na água, café salvadorenho de verdade e uma taça de vinho quando o sol se põe.",
+  svc_kicker:"O que fazemos", svc_h2:"Boas ondas, bom café, boa gente — todos os dias",
+  svc_lead:"Água quente e ondas 365 dias por ano. Uma única loja na entrada de El Tunco: pranchas, aulas, fotógrafo na água, matcha e café salvadorenho de verdade — e uma taça de vinho quando o sol se põe.",
   c1_h:"Aluguel de pranchas", c1_p:"Shortboards, longboards e soft-tops, por hora ou por dia. Entre, pegue sua prancha — a praia está logo ali.", c1_a:"Reserve sua prancha →",
   c2_h:"Aulas de surf", c2_p:"Aprenda a surfar em El Tunco com instrutores locais que cresceram nessas ondas — iniciantes bem-vindos, aulas particulares e em grupo.", c2_a:"Reserve uma aula →",
   c3_h:"Fotografia de surf", c3_p:"Um fotógrafo registra sua sessão em El Tunco ou El Sunzal. Leve provas, não só histórias.", c3_a:"Reserve uma sessão →",
-  c4_h:"Café salvadorenho", c4_p:"Abrimos às 6h para o dawn patrol. Café cultivado nestas montanhas, servido a passos da praia.", c4_a:"Pergunte o que tem →",
+  c4_h:"Café e matcha", c4_p:"Abrimos às 6h para o dawn patrol. Café salvadorenho e matcha gelado, a passos da praia — felicidade num copo.", c4_a:"Pergunte o que tem →",
   c5_h:"Vinhos e destilados", c5_p:"Uma seleção caprichada de vinhos e destilados — escolhida pela família por trás de uma das maiores lojas de bebidas das Carolinas (EUA).", c5_a:"Veja a seleção →",
   c6_h:"Merch e arte de surf", c6_p:"Camisetas de El Tunco, arte de surf e peças que você não encontra em aeroporto. Leve a Surf City para casa.", c6_a:"Pergunte o que tem →",
   pkg_badge:"A assinatura da Mango Avenue", pkg_kicker:"Aula + fotos", pkg_h2:"Surfe. Leve a prova.",
@@ -404,6 +411,7 @@ pt:{
   fu_s2:"Estamos imediatamente à sua DIREITA, ao lado do supermercado, em frente ao Mira Surf.",
   fu_s3:"Olhe para cima — se houver uma mangueira sobre você, chegou.",
   fu_hours:"Aberto todos os dias, das 6h às 20h. El Tunco, La Libertad, El Salvador.",
+  fu_map_btn:"Como chegar no Google Maps →",
   ft_tag:"surf • café • vinho — Da primeira luz ao último gole.",
   ft_age:"Álcool servido e vendido apenas a maiores de idade. Beba com responsabilidade.",
   ft_loc:"El Tunco · Surf City · El Salvador",
@@ -418,12 +426,12 @@ fr:{
   hero_sub:"Surf shop, location de planches et café au cœur d'El Tunco, El Salvador",
   hero_cta1:"Réserver un cours de surf", hero_cta2:"Louer une planche",
   strip_hours:"Ouvert tous les jours, 6h – 20h", strip_loc:"À l'entrée du village, première boutique à droite",
-  svc_kicker:"Ce qu'on fait", svc_h2:"Tout ce qu'il faut pour une journée dans l'eau — et après",
-  svc_lead:"Une seule boutique à l'entrée d'El Tunco : planches, cours, photographe dans l'eau, vrai café salvadorien et un verre de vin au coucher du soleil.",
+  svc_kicker:"Ce qu'on fait", svc_h2:"De bonnes vagues, du bon café, des gens heureux — tous les jours",
+  svc_lead:"Eau chaude et vagues 365 jours par an. Une seule boutique à l'entrée d'El Tunco : planches, cours, photographe dans l'eau, matcha et vrai café salvadorien — et un verre de vin au coucher du soleil.",
   c1_h:"Location de planches", c1_p:"Shortboards, longboards et soft-tops, à l'heure ou à la journée. Entrez, prenez une planche — la plage est juste là.", c1_a:"Réserver une planche →",
   c2_h:"Cours de surf", c2_p:"Apprenez à surfer à El Tunco avec des instructeurs locaux qui ont grandi sur ces vagues — débutants bienvenus, cours privés ou en groupe.", c2_a:"Réserver un cours →",
   c3_h:"Photographie de surf", c3_p:"Un photographe immortalise votre session à El Tunco ou El Sunzal. Repartez avec des preuves, pas seulement des histoires.", c3_a:"Réserver une séance →",
-  c4_h:"Café salvadorien", c4_p:"Ouvert dès 6h pour le dawn patrol. Un café cultivé dans ces montagnes, servi à deux pas de la plage.", c4_a:"Demandez ce qui se prépare →",
+  c4_h:"Café et matcha", c4_p:"Ouvert dès 6h pour le dawn patrol. Café salvadorien et matcha glacé, à deux pas de la plage — du bonheur dans un verre.", c4_a:"Demandez ce qui se prépare →",
   c5_h:"Vins et spiritueux", c5_p:"Une sélection soignée de vins et spiritueux — choisie par la famille derrière l'un des plus grands cavistes des Carolines (États-Unis).", c5_a:"Voir la sélection →",
   c6_h:"Merch et art de surf", c6_p:"T-shirts El Tunco, art du surf et pièces introuvables en aéroport. Emportez Surf City chez vous.", c6_a:"Demandez ce qu'on a →",
   pkg_badge:"La signature Mango Avenue", pkg_kicker:"Cours + photos", pkg_h2:"Surfez. Gardez la preuve.",
@@ -456,12 +464,12 @@ de:{
   hero_sub:"Surfshop, Boardverleih & Kaffee im Herzen von El Tunco, El Salvador",
   hero_cta1:"Surfstunde buchen", hero_cta2:"Board mieten",
   strip_hours:"Täglich geöffnet, 6 – 20 Uhr", strip_loc:"Am Ortseingang, erster Laden rechts",
-  svc_kicker:"Was wir machen", svc_h2:"Alles für einen Tag im Wasser — und danach",
-  svc_lead:"Ein Laden am Eingang von El Tunco: Boards, Surfkurse, ein Fotograf im Wasser, echter salvadorianischer Kaffee und ein Glas Wein zum Sonnenuntergang.",
+  svc_kicker:"Was wir machen", svc_h2:"Gute Wellen, guter Kaffee, gute Leute — jeden einzelnen Tag",
+  svc_lead:"Warmes Wasser und Wellen an 365 Tagen im Jahr. Ein Laden am Eingang von El Tunco: Boards, Surfkurse, ein Fotograf im Wasser, Matcha und echter salvadorianischer Kaffee — und ein Glas Wein zum Sonnenuntergang.",
   c1_h:"Surfboard-Verleih", c1_p:"Shortboards, Longboards und Soft-Tops, stunden- oder tageweise. Reinkommen, Board schnappen — der Strand ist direkt da.", c1_a:"Board reservieren →",
   c2_h:"Surfkurse", c2_p:"Surfen lernen in El Tunco mit lokalen Lehrern, die auf diesen Wellen aufgewachsen sind — Anfänger willkommen, privat oder in der Gruppe.", c2_a:"Kurs buchen →",
   c3_h:"Surf-Fotografie", c3_p:"Ein Fotograf begleitet deine Session in El Tunco oder El Sunzal. Nimm Beweise mit, nicht nur Geschichten.", c3_a:"Fotosession buchen →",
-  c4_h:"Salvadorianischer Kaffee", c4_p:"Ab 6 Uhr geöffnet für die Dawn Patrol. Kaffee aus diesen Bergen, ein paar Schritte vom Strand gebrüht.", c4_a:"Frag, was es gibt →",
+  c4_h:"Kaffee & Matcha", c4_p:"Ab 6 Uhr geöffnet für die Dawn Patrol. Salvadorianischer Kaffee und Iced Matcha, ein paar Schritte vom Strand — Glück im Becher.", c4_a:"Frag, was es gibt →",
   c5_h:"Wein & Spirituosen", c5_p:"Ein sorgfältig kuratiertes Regal mit Wein und Spirituosen — kuratiert von der Familie hinter einem der größten Spirituosengeschäfte der Carolinas (USA).", c5_a:"Auswahl ansehen →",
   c6_h:"Surf-Merch & Kunst", c6_p:"El-Tunco-Shirts, Surf-Kunst und Stücke, die es in keinem Flughafenshop gibt. Nimm Surf City mit nach Hause.", c6_a:"Frag, was da ist →",
   pkg_badge:"Das Markenzeichen von Mango Avenue", pkg_kicker:"Kurs + Fotos", pkg_h2:"Surf die Welle. Behalte den Beweis.",
@@ -480,6 +488,7 @@ de:{
   fu_s2:"Wir sind sofort auf der RECHTEN Seite, neben dem Supermarkt, gegenüber von Mira Surf.",
   fu_s3:"Schau nach oben — wenn über dir ein Mangobaum steht, bist du da.",
   fu_hours:"Täglich geöffnet von 6 bis 20 Uhr. El Tunco, La Libertad, El Salvador.",
+  fu_map_btn:"Route in Google Maps →",
   ft_tag:"Surf • Kaffee • Wein — Vom ersten Licht bis zum letzten Glas.",
   ft_age:"Alkohol wird nur an Volljährige ausgeschenkt und verkauft. Bitte verantwortungsvoll genießen.",
   ft_loc:"El Tunco · Surf City · El Salvador",
