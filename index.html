@@ -6,7 +6,7 @@
 <title>Mango Avenue | Surf Shop, Lessons & Coffee in El Tunco, Surf City El Salvador</title>
 <meta name="description" content="Surf shop, board rentals, surf lessons, surf photography, coffee & wine in the heart of El Tunco, Surf City El Salvador. First shop on your right at the town entrance, next to the supermarket. Open daily 6 AM – 8 PM. Book on WhatsApp.">
 <meta property="og:title" content="Mango Avenue — Surf • Coffee • Wine — El Tunco, El Salvador">
-<meta property="og:description" content="From first light to last glass. Board rentals, surf lessons & photo sessions in Surf City El Salvador.">
+<meta property="og:description" content="Love God, Love People, Surf. Board rentals, surf lessons & photo sessions in Surf City El Salvador.">
 <meta property="og:type" content="business.business">
 <meta property="og:image" content="https://themangoavenue.com/img/storefront.jpg">
 <script type="application/ld+json">
@@ -15,7 +15,7 @@
   "@type": "LocalBusiness",
   "name": "Mango Avenue",
   "description": "Surf shop with board rentals, surf lessons, surf photography, coffee, wine and surf art in El Tunco, El Salvador.",
-  "slogan": "From first light to last glass.",
+  "slogan": "Love God, Love People, Surf.",
   "telephone": "+50360147218",
   "address": {
     "@type": "PostalAddress",
@@ -108,6 +108,13 @@ img.ph{width:100%;height:170px;object-fit:cover;display:block}
 .feature ul{margin:.9rem 0 1.2rem 1.2rem}
 .feature li{margin:.3rem 0}
 .btn-mango{background:var(--mango);color:var(--ink)}
+.signup{background:linear-gradient(180deg,#FFFDF8,#FDF3E0)}
+.board{position:relative;margin:2rem auto 2.6rem;width:min(320px,86vw);padding:3.4rem 2.1rem 3.8rem;display:flex;flex-direction:column;gap:.85rem;background:linear-gradient(165deg,#FFD98E,var(--mango) 45%,var(--sunset));border-radius:50% 50% 46% 46%/16rem 16rem 6rem 6rem;box-shadow:0 14px 34px rgba(200,90,40,.35),inset 0 0 0 6px rgba(255,255,255,.55)}
+.board .stringer{position:absolute;top:1.2rem;bottom:1.2rem;left:50%;width:2px;background:rgba(120,50,20,.16)}
+.board input{position:relative;z-index:1;border:none;border-radius:2rem;padding:.72rem 1rem;font-size:.95rem;background:rgba(255,255,255,.94);color:var(--ink);text-align:center}
+.board input:focus{outline:2px solid var(--ocean)}
+.board button{position:relative;z-index:1;margin-top:.4rem;border:none;cursor:pointer;font-size:1rem}
+.board .fin{position:absolute;left:50%;bottom:-1.5rem;transform:translateX(-50%);width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:26px solid var(--ocean-deep)}
 .mapwrap{margin-top:1.6rem;border-radius:1rem;overflow:hidden;border:1px solid var(--line)}
 .mapwrap iframe{width:100%;height:340px;border:0;display:block}
 .feature-img{flex:1 1 300px}
@@ -157,8 +164,9 @@ footer a{color:var(--mango)}
   <div class="hero-in">
     <p class="kicker" data-i18n="hero_kicker">surf • coffee • wine</p>
     <h1>Mango Avenue</h1>
-    <p class="tagline" data-i18n="hero_tagline">From first light to last glass.</p>
+    <p class="tagline" data-i18n="hero_tagline">Love God, Love People, Surf.</p>
     <p class="sub-h1" data-i18n="hero_sub">Surf shop, board rentals &amp; coffee in the heart of El Tunco, El Salvador</p>
+    <p class="hero-ig" style="margin-top:.5rem;font-size:1.05rem"><a href="https://www.instagram.com/themangoavenue" rel="noopener" style="color:inherit;text-decoration:none;font-weight:700">@themangoavenue</a></p>
     <div class="hero-cta">
       <a class="btn btn-solid" data-wa="wa_lesson" data-i18n="hero_cta1" href="#">Book a surf lesson</a>
       <a class="btn btn-line" data-wa="wa_rental" data-i18n="hero_cta2" href="#">Rent a board</a>
@@ -273,6 +281,23 @@ footer a{color:var(--mango)}
   </div>
 </section>
 
+<section id="signup" class="signup">
+  <div class="in" style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <p class="sec-kicker" data-i18n="su_kicker">Stay in the loop</p>
+    <h2 data-i18n="su_h2">Join the Mango Avenue crew</h2>
+    <p class="lead" data-i18n="su_p">Swell alerts, events, tastings and new boards — be the first to know.</p>
+    <form class="board" id="signupForm" autocomplete="on">
+      <div class="stringer"></div>
+      <input type="text" id="su_name" data-ph="su_name" placeholder="Name" required>
+      <input type="tel" id="su_phone" data-ph="su_phone" placeholder="Phone / WhatsApp">
+      <input type="email" id="su_email" data-ph="su_email" placeholder="Email">
+      <input type="text" id="su_ig" data-ph="su_ig" placeholder="Instagram @">
+      <button type="submit" class="btn btn-mango" data-i18n="su_btn">Count me in 🤙</button>
+      <div class="fin"></div>
+    </form>
+  </div>
+</section>
+
 <section id="findus">
   <div class="in">
     <p class="sec-kicker" data-i18n="fu_kicker">Find us</p>
@@ -290,7 +315,7 @@ footer a{color:var(--mango)}
 
 <footer>
   <a class="brand" href="#top"><span class="dot"></span>MANGO AVENUE</a>
-  <p data-i18n="ft_tag">surf • coffee • wine — From first light to last glass.</p>
+  <p data-i18n="ft_tag">surf • coffee • wine — Love God, Love People, Surf.</p>
   <p style="margin-top:.6rem">WhatsApp <a href="https://wa.me/50360147218">+503 6014 7218</a> · <a href="https://www.instagram.com/themangoavenue" rel="noopener">@themangoavenue</a></p>
   <p class="age-note" data-i18n="ft_age">Alcohol served and sold to guests of legal drinking age only. Please drink responsibly.</p>
   <p style="margin-top:.9rem;opacity:.6" data-i18n="ft_loc">El Tunco · Surf City · El Salvador</p>
@@ -304,7 +329,7 @@ const I18N = {
 en:{
   nav_book:"Book on WhatsApp",
   hero_kicker:"surf • coffee • wine",
-  hero_tagline:"From first light to last glass.",
+  hero_tagline:"Love God, Love People, Surf.",
   hero_sub:"Surf shop, board rentals & coffee in the heart of El Tunco, El Salvador",
   hero_cta1:"Book a surf lesson", hero_cta2:"Rent a board",
   strip_hours:"Open daily 6 AM – 8 PM", strip_loc:"Town entrance, first shop on your right",
@@ -332,8 +357,9 @@ en:{
   fu_s2:"We're immediately on your RIGHT, next to the supermarket, in front of Mira Surf.",
   fu_s3:"Look up — if there's a mango tree above you, you've arrived.",
   fu_hours:"Open every day, 6 AM to 8 PM. El Tunco, La Libertad, El Salvador.",
+  su_kicker:"Stay in the loop", su_h2:"Join the Mango Avenue crew", su_p:"Swell alerts, events, tastings and new boards — be the first to know.", su_name:"Name", su_phone:"Phone / WhatsApp", su_email:"Email", su_ig:"Instagram @", su_btn:"Count me in 🤙",
   fu_map_btn:"Get directions in Google Maps →",
-  ft_tag:"surf • coffee • wine — From first light to last glass.",
+  ft_tag:"surf • coffee • wine — Love God, Love People, Surf.",
   ft_age:"Alcohol served and sold to guests of legal drinking age only. Please drink responsibly.",
   ft_loc:"El Tunco · Surf City · El Salvador",
   wa_general:"Hi Mango Avenue! 👋", wa_lesson:"Hi! I'd like to book a surf lesson 🌊",
@@ -343,7 +369,7 @@ en:{
 es:{
   nav_book:"Reservar por WhatsApp",
   hero_kicker:"surf • café • vino",
-  hero_tagline:"De la primera luz a la última copa.",
+  hero_tagline:"Ama a Dios, Ama a la Gente, Surfea.",
   hero_sub:"Surf shop, alquiler de tablas y café en el corazón de El Tunco, El Salvador",
   hero_cta1:"Reserva una clase de surf", hero_cta2:"Alquila una tabla",
   strip_hours:"Abierto todos los días 6 AM – 8 PM", strip_loc:"En la entrada del pueblo, primera tienda a tu derecha",
@@ -371,8 +397,9 @@ es:{
   fu_s2:"Estamos inmediatamente a tu DERECHA, junto al supermercado, frente a Mira Surf.",
   fu_s3:"Mira hacia arriba — si hay un árbol de mango sobre ti, ya llegaste.",
   fu_hours:"Abierto todos los días de 6 AM a 8 PM. El Tunco, La Libertad, El Salvador.",
+  su_kicker:"Mantente al tanto", su_h2:"Únete a la crew de Mango Avenue", su_p:"Alertas de olas, eventos, catas y tablas nuevas — entérate primero.", su_name:"Nombre", su_phone:"Teléfono / WhatsApp", su_email:"Correo", su_ig:"Instagram @", su_btn:"¡Apúntame! 🤙",
   fu_map_btn:"Cómo llegar en Google Maps →",
-  ft_tag:"surf • café • vino — De la primera luz a la última copa.",
+  ft_tag:"surf • café • vino — Ama a Dios, Ama a la Gente, Surfea.",
   ft_age:"Alcohol servido y vendido solo a mayores de edad. Bebe con responsabilidad.",
   ft_loc:"El Tunco · Surf City · El Salvador",
   wa_general:"¡Hola Mango Avenue! 👋", wa_lesson:"¡Hola! Quiero reservar una clase de surf 🌊",
@@ -382,7 +409,7 @@ es:{
 pt:{
   nav_book:"Reservar pelo WhatsApp",
   hero_kicker:"surf • café • vinho",
-  hero_tagline:"Da primeira luz ao último gole.",
+  hero_tagline:"Ame a Deus, Ame as Pessoas, Surfe.",
   hero_sub:"Surf shop, aluguel de pranchas e café no coração de El Tunco, El Salvador",
   hero_cta1:"Reserve uma aula de surf", hero_cta2:"Alugue uma prancha",
   strip_hours:"Aberto todos os dias, 6h – 20h", strip_loc:"Na entrada da vila, primeira loja à sua direita",
@@ -410,8 +437,9 @@ pt:{
   fu_s2:"Estamos imediatamente à sua DIREITA, ao lado do supermercado, em frente ao Mira Surf.",
   fu_s3:"Olhe para cima — se houver uma mangueira sobre você, chegou.",
   fu_hours:"Aberto todos os dias, das 6h às 20h. El Tunco, La Libertad, El Salvador.",
+  su_kicker:"Fique por dentro", su_h2:"Entre para a crew da Mango Avenue", su_p:"Alertas de swell, eventos, degustações e pranchas novas — saiba primeiro.", su_name:"Nome", su_phone:"Telefone / WhatsApp", su_email:"E-mail", su_ig:"Instagram @", su_btn:"Pode me contar! 🤙",
   fu_map_btn:"Como chegar no Google Maps →",
-  ft_tag:"surf • café • vinho — Da primeira luz ao último gole.",
+  ft_tag:"surf • café • vinho — Ame a Deus, Ame as Pessoas, Surfe.",
   ft_age:"Álcool servido e vendido apenas a maiores de idade. Beba com responsabilidade.",
   ft_loc:"El Tunco · Surf City · El Salvador",
   wa_general:"Olá Mango Avenue! 👋", wa_lesson:"Olá! Quero reservar uma aula de surf 🌊",
@@ -449,6 +477,7 @@ fr:{
   fu_s2:"Nous sommes immédiatement à votre DROITE, à côté du supermarché, en face de Mira Surf.",
   fu_s3:"Levez les yeux — s'il y a un manguier au-dessus de vous, vous y êtes.",
   fu_hours:"Ouvert tous les jours de 6h à 20h. El Tunco, La Libertad, El Salvador.",
+  su_kicker:"Restez branché", su_h2:"Rejoignez la crew Mango Avenue", su_p:"Alertes houle, événements, dégustations et nouvelles planches — soyez les premiers informés.", su_name:"Nom", su_phone:"Téléphone / WhatsApp", su_email:"E-mail", su_ig:"Instagram @", su_btn:"Je m'inscris 🤙",
   fu_map_btn:"Itinéraire dans Google Maps →",
   ft_tag:"surf • café • vin — De la première lumière au dernier verre.",
   ft_age:"Alcool servi et vendu uniquement aux personnes majeures. À consommer avec modération.",
@@ -488,6 +517,7 @@ de:{
   fu_s2:"Wir sind sofort auf der RECHTEN Seite, neben dem Supermarkt, gegenüber von Mira Surf.",
   fu_s3:"Schau nach oben — wenn über dir ein Mangobaum steht, bist du da.",
   fu_hours:"Täglich geöffnet von 6 bis 20 Uhr. El Tunco, La Libertad, El Salvador.",
+  su_kicker:"Bleib auf dem Laufenden", su_h2:"Werde Teil der Mango-Avenue-Crew", su_p:"Swell-Alarm, Events, Tastings und neue Boards — erfahr es zuerst.", su_name:"Name", su_phone:"Telefon / WhatsApp", su_email:"E-Mail", su_ig:"Instagram @", su_btn:"Ich bin dabei 🤙",
   fu_map_btn:"Route in Google Maps →",
   ft_tag:"Surf • Kaffee • Wein — Vom ersten Licht bis zum letzten Glas.",
   ft_age:"Alkohol wird nur an Volljährige ausgeschenkt und verkauft. Bitte verantwortungsvoll genießen.",
@@ -509,9 +539,19 @@ function setLang(lang){
     const k = el.getAttribute("data-wa");
     el.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(d[k] || d.wa_general);
   });
+  document.querySelectorAll("[data-ph]").forEach(el=>{
+    const k = el.getAttribute("data-ph");
+    if(d[k]) el.placeholder = d[k];
+  });
   document.querySelectorAll("#langs button").forEach(b=>b.classList.toggle("on", b.dataset.lang===lang));
   try{localStorage.setItem("ma_lang", lang);}catch(e){}
 }
+document.getElementById("signupForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const msg="🥭 New Mango Avenue sign-up!\nName: "+v("su_name")+"\nPhone: "+(v("su_phone")||"—")+"\nEmail: "+(v("su_email")||"—")+"\nInstagram: "+(v("su_ig")||"—");
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank");
+});
 document.querySelectorAll("#langs button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
 let saved="en";
 try{saved = localStorage.getItem("ma_lang") || (navigator.language||"en").slice(0,2);}catch(e){}
