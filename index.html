@@ -115,6 +115,9 @@ img.ph{width:100%;height:170px;object-fit:cover;display:block}
 .board input:focus{outline:2px solid var(--ocean)}
 .board button{position:relative;z-index:1;margin-top:.4rem;border:none;cursor:pointer;font-size:1rem}
 .board .fin{position:absolute;left:50%;bottom:-1.5rem;transform:translateX(-50%);width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:26px solid var(--ocean-deep)}
+.findus-flex{display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start}
+.findus-steps{flex:1 1 320px}
+.findus-photo{flex:1 1 260px;max-width:340px;border-radius:1rem;display:block}
 .mapwrap{margin-top:1.6rem;border-radius:1rem;overflow:hidden;border:1px solid var(--line)}
 .mapwrap iframe{width:100%;height:340px;border:0;display:block}
 .feature-img{flex:1 1 300px}
@@ -302,12 +305,17 @@ footer a{color:var(--mango)}
   <div class="in">
     <p class="sec-kicker" data-i18n="fu_kicker">Find us</p>
     <h2 data-i18n="fu_h2">You literally can't miss us</h2>
+    <div class="findus-flex">
+    <div class="findus-steps">
     <div class="steps">
       <div class="step" data-i18n="fu_s1">Walk through the main entrance of El Tunco, past the security checkpoint.</div>
       <div class="step" data-i18n="fu_s2">We're immediately on your RIGHT, next to the supermarket, in front of Mira Surf.</div>
       <div class="step" data-i18n="fu_s3">Look up — if there's a mango tree above you, you've arrived.</div>
     </div>
     <p style="margin-top:1rem" data-i18n="fu_hours">Open every day, 6 AM to 8 PM. El Tunco, La Libertad, El Salvador.</p>
+    </div>
+    <img class="findus-photo" src="img/mira.jpg" alt="Matcha from Mango Avenue in front of the Mira Surf sign — the landmark across from the shop in El Tunco">
+    </div>
     <div class="mapwrap"><iframe src="https://www.google.com/maps?q=El+Tunco,+La+Libertad,+El+Salvador&output=embed" loading="lazy" title="Map of El Tunco, El Salvador" allowfullscreen></iframe></div>
     <p style="margin-top:.9rem"><a class="btn" style="background:var(--ocean-deep);color:#fff" data-i18n="fu_map_btn" href="https://www.google.com/maps/dir/?api=1&destination=Playa+El+Tunco,+La+Libertad,+El+Salvador" target="_blank" rel="noopener">Get directions in Google Maps →</a></p>
   </div>
