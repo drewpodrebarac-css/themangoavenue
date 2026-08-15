@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mango Avenue | Surf Shop, Lessons & Coffee in El Tunco, Surf City El Salvador</title>
+<meta name="description" content="Surf shop, board rentals, surf lessons, surf photography, coffee & wine in El Tunco, El Salvador. First shop on your right at the town entrance, next to the supermarket. Open daily 6 AM – 8 PM. Book on WhatsApp.">
+<meta property="og:title" content="Mango Avenue — Surf • Coffee • Wine — El Tunco, El Salvador">
+<meta property="og:description" content="From first light to last glass. Board rentals, surf lessons & photo sessions in Surf City El Salvador.">
+<meta property="og:type" content="business.business">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Mango Avenue",
+  "description": "Surf shop with board rentals, surf lessons, surf photography, coffee, wine and surf art in El Tunco, El Salvador.",
+  "slogan": "From first light to last glass.",
+  "telephone": "+50360147218",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "El Tunco",
+    "addressRegion": "La Libertad",
+    "addressCountry": "SV"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "06:00",
+    "closes": "20:00"
+  },
+  "sameAs": ["https://www.instagram.com/themangoavenue"]
+}
+</script>
+<style>
+:root{
+  --mango:#FFB03A; --mango-deep:#E8842B; --sunset:#FF6B4A;
+  --ocean:#0E7C86; --ocean-deep:#0A5560; --palm:#2E5E4E;
+  --ink:#1C2321; --sand:#FAF3E7; --paper:#FFFDF8; --line:#EADFCB;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+img{max-width:100%}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15}
+a{color:var(--ocean)}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:0 auto;padding:.6rem 1rem;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:1.25rem;letter-spacing:.02em;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:.45rem}
+.brand .dot{width:.85rem;height:.85rem;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--mango),var(--mango-deep));display:inline-block}
+.langs{display:flex;gap:.25rem;margin-left:auto}
+.langs button{border:1px solid var(--line);background:#fff;border-radius:.5rem;padding:.28rem .55rem;font-size:.78rem;font-weight:600;cursor:pointer;color:var(--ink)}
+.langs button.on{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+.wa-nav{background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:.45rem .8rem;border-radius:2rem;white-space:nowrap}
+
+/* ---------- hero ---------- */
+header{position:relative;overflow:hidden;background:linear-gradient(175deg,#FFD98E 0%,var(--mango) 30%,var(--sunset) 68%,#C94F3D 100%);color:#fff;text-align:center;padding:4.5rem 1.25rem 0}
+.sun{position:absolute;top:2.2rem;right:8%;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#FFF3D6,#FFC95E 55%,var(--mango-deep));box-shadow:0 0 80px 30px rgba(255,220,140,.55);opacity:.9}
+.hero-in{position:relative;max-width:760px;margin:0 auto;z-index:2}
+.kicker{font-size:.95rem;letter-spacing:.35em;text-transform:uppercase;font-weight:700;text-shadow:0 1px 8px rgba(120,40,20,.35)}
+header h1{font-size:clamp(2.6rem,8vw,4.6rem);margin:.4rem 0 .3rem;text-shadow:0 2px 14px rgba(120,40,20,.35)}
+.tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(1.15rem,3.5vw,1.5rem);text-shadow:0 1px 8px rgba(120,40,20,.4)}
+.sub-h1{font-size:clamp(.95rem,2.6vw,1.1rem);font-weight:600;margin-top:.7rem;opacity:.95;text-shadow:0 1px 6px rgba(120,40,20,.4)}
+.hero-cta{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin:1.5rem 0 3.2rem}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:2rem;padding:.8rem 1.5rem;font-size:1rem}
+.btn-solid{background:#fff;color:#C0452F}
+.btn-line{border:2px solid rgba(255,255,255,.9);color:#fff}
+.wave{display:block;width:100%;margin-bottom:-2px}
+
+/* ---------- info strip ---------- */
+.strip{background:var(--ocean-deep);color:var(--sand)}
+.strip-in{max-width:1080px;margin:0 auto;padding:.8rem 1rem;display:flex;gap:1.4rem;justify-content:center;flex-wrap:wrap;font-size:.92rem;text-align:center}
+.strip b{color:#fff}
+
+/* ---------- sections ---------- */
+section{padding:3.4rem 1.25rem}
+.in{max-width:1080px;margin:0 auto}
+.sec-kicker{color:var(--mango-deep);font-weight:800;letter-spacing:.22em;text-transform:uppercase;font-size:.78rem}
+section h2{font-size:clamp(1.7rem,4.5vw,2.4rem);margin:.25rem 0 .9rem}
+.lead{max-width:640px;font-size:1.05rem}
+
+/* services grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1.1rem;margin-top:1.8rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column}
+.ph{height:150px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;color:#fff}
+/* photo slots — replace each .ph div with <img src="..."> when real photos arrive */
+.ph-1{background:linear-gradient(135deg,var(--ocean),#15A3B0)}
+.ph-2{background:linear-gradient(135deg,var(--sunset),var(--mango))}
+.ph-3{background:linear-gradient(135deg,#3B3B98,#6C5CE7)}
+.ph-4{background:linear-gradient(135deg,#5D4037,#8D6E63)}
+.ph-5{background:linear-gradient(135deg,#7B1E3B,#B33951)}
+.ph-6{background:linear-gradient(135deg,var(--palm),#4C8C6E)}
+.card-body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.card h3{font-size:1.2rem}
+.card p{font-size:.95rem;flex:1}
+.card a{font-weight:700;text-decoration:none;color:var(--ocean-deep)}
+
+/* featured package */
+.feature{background:linear-gradient(150deg,var(--ocean-deep),var(--ocean));color:var(--sand)}
+.feature h2{color:#fff}
+.feature .sec-kicker{color:var(--mango)}
+.feature-flex{display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+.feature-txt{flex:1 1 340px}
+.badge{display:inline-block;background:var(--mango);color:var(--ink);font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;border-radius:2rem;padding:.3rem .8rem;margin-bottom:.8rem}
+.feature ul{margin:.9rem 0 1.2rem 1.2rem}
+.feature li{margin:.3rem 0}
+.btn-mango{background:var(--mango);color:var(--ink)}
+
+/* about */
+.about{background:var(--sand)}
+.about-flex{display:flex;gap:2.2rem;align-items:center;flex-wrap:wrap}
+.about-txt{flex:1 1 340px}
+.tree{flex:0 1 260px;text-align:center;font-size:7rem;line-height:1}
+
+/* find us */
+.steps{counter-reset:s;margin-top:1.4rem;max-width:560px}
+.step{position:relative;padding:0 0 1.1rem 3rem}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:2rem;height:2rem;border-radius:50%;background:var(--mango);color:var(--ink);font-weight:800;display:flex;align-items:center;justify-content:center}
+
+/* groups */
+.groups{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* footer */
+footer{background:var(--ink);color:var(--sand);padding:2.6rem 1.25rem;text-align:center}
+footer .brand{color:var(--sand);justify-content:center;margin-bottom:.6rem}
+footer p{font-size:.9rem;opacity:.85}
+footer a{color:var(--mango)}
+.wa-float{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;background:#25D366;color:#fff;border-radius:50%;width:3.4rem;height:3.4rem;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 18px rgba(0,0,0,.28);font-size:1.6rem}
+.age-note{font-size:.8rem;opacity:.75;margin-top:.5rem}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#top"><span class="dot"></span>MANGO AVENUE</a>
+    <div class="langs" id="langs">
+      <button data-lang="en" class="on">EN</button>
+      <button data-lang="es">ES</button>
+      <button data-lang="pt">PT</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="de">DE</button>
+    </div>
+    <a class="wa-nav" data-wa="wa_general" data-i18n="nav_book" href="#">Book on WhatsApp</a>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="sun"></div>
+  <div class="hero-in">
+    <p class="kicker" data-i18n="hero_kicker">surf • coffee • wine</p>
+    <h1>Mango Avenue</h1>
+    <p class="tagline" data-i18n="hero_tagline">From first light to last glass.</p>
+    <p class="sub-h1" data-i18n="hero_sub">Surf shop, board rentals &amp; coffee in El Tunco, El Salvador</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" data-wa="wa_lesson" data-i18n="hero_cta1" href="#">Book a surf lesson</a>
+      <a class="btn btn-line" data-wa="wa_rental" data-i18n="hero_cta2" href="#">Rent a board</a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFDF8" d="M0,60 C240,110 480,10 720,45 C960,80 1200,20 1440,55 L1440,90 L0,90 Z"/></svg>
+</header>
+
+<div class="strip">
+  <div class="strip-in">
+    <span>🕕 <b data-i18n="strip_hours">Open daily 6 AM – 8 PM</b></span>
+    <span>📍 <b data-i18n="strip_loc">Town entrance, first shop on your right</b></span>
+    <span>💬 <b>WhatsApp +503 6014 7218</b></span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="in">
+    <p class="sec-kicker" data-i18n="svc_kicker">What we do</p>
+    <h2 data-i18n="svc_h2">Everything you need for a day in the water — and after it</h2>
+    <p class="lead" data-i18n="svc_lead">One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, real Salvadoran coffee, and a glass of wine when the sun drops.</p>
+    <div class="grid">
+      <div class="card">
+        <!-- PHOTO SLOT: boards on the rack -->
+        <div class="ph ph-1">🏄</div>
+        <div class="card-body">
+          <h3 data-i18n="c1_h">Surfboard rentals</h3>
+          <p data-i18n="c1_p">Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board, the beach is right there.</p>
+          <a data-wa="wa_rental" data-i18n="c1_a" href="#">Reserve a board →</a>
+        </div>
+      </div>
+      <div class="card">
+        <!-- PHOTO SLOT: lesson in the whitewater -->
+        <div class="ph ph-2">🌊</div>
+        <div class="card-body">
+          <h3 data-i18n="c2_h">Surf lessons</h3>
+          <p data-i18n="c2_p">Learn to surf in El Tunco with local instructors who grew up on these waves — beginners welcome, private and group classes.</p>
+          <a data-wa="wa_lesson" data-i18n="c2_a" href="#">Book a lesson →</a>
+        </div>
+      </div>
+      <div class="card">
+        <!-- PHOTO SLOT: surfer shot from the water -->
+        <div class="ph ph-3">📸</div>
+        <div class="card-body">
+          <h3 data-i18n="c3_h">Surf photography</h3>
+          <p data-i18n="c3_p">A photographer shoots your session at El Tunco or El Sunzal. Leave with proof, not just stories.</p>
+          <a data-wa="wa_photo" data-i18n="c3_a" href="#">Book a photo session →</a>
+        </div>
+      </div>
+      <div class="card">
+        <!-- PHOTO SLOT: coffee at the bar, morning light -->
+        <div class="ph ph-4">☕</div>
+        <div class="card-body">
+          <h3 data-i18n="c4_h">Salvadoran coffee</h3>
+          <p data-i18n="c4_p">We open at 6 AM for dawn patrol. Coffee grown in these mountains, brewed steps from the beach.</p>
+          <a data-wa="wa_general" data-i18n="c4_a" href="#">Ask what's brewing →</a>
+        </div>
+      </div>
+      <div class="card">
+        <!-- PHOTO SLOT: wine / bottle shelf at sunset -->
+        <div class="ph ph-5">🍷</div>
+        <div class="card-body">
+          <h3 data-i18n="c5_h">Wine &amp; spirits</h3>
+          <p data-i18n="c5_p">A properly curated shelf of wine and spirits — chosen by the family behind one of the largest liquor stores in the Carolinas (USA).</p>
+          <a data-wa="wa_general" data-i18n="c5_a" href="#">See the shelf →</a>
+        </div>
+      </div>
+      <div class="card">
+        <!-- PHOTO SLOT: merch / art wall -->
+        <div class="ph ph-6">🎨</div>
+        <div class="card-body">
+          <h3 data-i18n="c6_h">Surf merch &amp; art</h3>
+          <p data-i18n="c6_p">El Tunco tees, surf art and pieces you won't find in an airport gift shop. Take Surf City home.</p>
+          <a data-wa="wa_general" data-i18n="c6_a" href="#">Ask what's in store →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="package">
+  <div class="in feature-flex">
+    <div class="feature-txt">
+      <span class="badge" data-i18n="pkg_badge">The Mango Avenue signature</span>
+      <p class="sec-kicker" data-i18n="pkg_kicker">Lesson + photos</p>
+      <h2 data-i18n="pkg_h2">Surf it. Keep the proof.</h2>
+      <p data-i18n="pkg_p">We teach your first wave — and photograph it. One booking, one morning:</p>
+      <ul>
+        <li data-i18n="pkg_li1">Surf lesson with a local instructor</li>
+        <li data-i18n="pkg_li2">Board and rash guard included</li>
+        <li data-i18n="pkg_li3">A photographer shooting your whole session</li>
+        <li data-i18n="pkg_li4">Edited photos delivered to your phone the same day</li>
+      </ul>
+      <a class="btn btn-mango" data-wa="wa_package" data-i18n="pkg_cta" href="#">Book the lesson + photo package</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="in about-flex">
+    <div class="tree" aria-hidden="true">🥭</div>
+    <div class="about-txt">
+      <p class="sec-kicker" data-i18n="ab_kicker">The name</p>
+      <h2 data-i18n="ab_h2">There really is a mango tree</h2>
+      <p data-i18n="ab_p1">A massive mango tree grows right above our shop, and it drops dozens of mangoes every single day. We named the place after it.</p>
+      <p data-i18n="ab_p2" style="margin-top:.7rem">You'll find us where the tree is: the first shop on your right as you walk into El Tunco — surf gear in front, coffee in the morning, a glass of wine as the sun goes down over Surf City El Salvador.</p>
+    </div>
+  </div>
+</section>
+
+<section class="groups">
+  <div class="in">
+    <p class="sec-kicker" data-i18n="gr_kicker">Groups &amp; retreats</p>
+    <h2 data-i18n="gr_h2">Hosting a retreat in El Tunco?</h2>
+    <p class="lead" data-i18n="gr_p">Boards, lessons and a photographer for your whole group — arranged in one WhatsApp message. Yoga retreats, surf trips, bachelor(ette)s: tell us dates and headcount, we handle the rest.</p>
+    <p style="margin-top:1rem"><a class="btn btn-solid" style="background:var(--ocean-deep);color:#fff" data-wa="wa_group" data-i18n="gr_cta" href="#">Plan your group visit</a></p>
+  </div>
+</section>
+
+<section id="findus">
+  <div class="in">
+    <p class="sec-kicker" data-i18n="fu_kicker">Find us</p>
+    <h2 data-i18n="fu_h2">You literally can't miss us</h2>
+    <div class="steps">
+      <div class="step" data-i18n="fu_s1">Walk through the main entrance of El Tunco, past the security checkpoint.</div>
+      <div class="step" data-i18n="fu_s2">We're immediately on your RIGHT, next to the supermarket, in front of Mira Surf.</div>
+      <div class="step" data-i18n="fu_s3">Look up — if there's a mango tree above you, you've arrived.</div>
+    </div>
+    <p style="margin-top:1rem" data-i18n="fu_hours">Open every day, 6 AM to 8 PM. El Tunco, La Libertad, El Salvador.</p>
+  </div>
+</section>
+
+<footer>
+  <a class="brand" href="#top"><span class="dot"></span>MANGO AVENUE</a>
+  <p data-i18n="ft_tag">surf • coffee • wine — From first light to last glass.</p>
+  <p style="margin-top:.6rem">WhatsApp <a href="https://wa.me/50360147218">+503 6014 7218</a> · <a href="https://www.instagram.com/themangoavenue" rel="noopener">@themangoavenue</a></p>
+  <p class="age-note" data-i18n="ft_age">Alcohol served and sold to guests of legal drinking age only. Please drink responsibly.</p>
+  <p style="margin-top:.9rem;opacity:.6" data-i18n="ft_loc">El Tunco · Surf City · El Salvador</p>
+</footer>
+
+<a class="wa-float" data-wa="wa_general" href="#" aria-label="WhatsApp">💬</a>
+
+<script>
+const WA = "50360147218";
+const I18N = {
+en:{
+  nav_book:"Book on WhatsApp",
+  hero_kicker:"surf • coffee • wine",
+  hero_tagline:"From first light to last glass.",
+  hero_sub:"Surf shop, board rentals & coffee in El Tunco, El Salvador",
+  hero_cta1:"Book a surf lesson", hero_cta2:"Rent a board",
+  strip_hours:"Open daily 6 AM – 8 PM", strip_loc:"Town entrance, first shop on your right",
+  svc_kicker:"What we do", svc_h2:"Everything you need for a day in the water — and after it",
+  svc_lead:"One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, real Salvadoran coffee, and a glass of wine when the sun drops.",
+  c1_h:"Surfboard rentals", c1_p:"Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board, the beach is right there.", c1_a:"Reserve a board →",
+  c2_h:"Surf lessons", c2_p:"Learn to surf in El Tunco with local instructors who grew up on these waves — beginners welcome, private and group classes.", c2_a:"Book a lesson →",
+  c3_h:"Surf photography", c3_p:"A photographer shoots your session at El Tunco or El Sunzal. Leave with proof, not just stories.", c3_a:"Book a photo session →",
+  c4_h:"Salvadoran coffee", c4_p:"We open at 6 AM for dawn patrol. Coffee grown in these mountains, brewed steps from the beach.", c4_a:"Ask what's brewing →",
+  c5_h:"Wine & spirits", c5_p:"A properly curated shelf of wine and spirits — chosen by the family behind one of the largest liquor stores in the Carolinas (USA).", c5_a:"See the shelf →",
+  c6_h:"Surf merch & art", c6_p:"El Tunco tees, surf art and pieces you won't find in an airport gift shop. Take Surf City home.", c6_a:"Ask what's in store →",
+  pkg_badge:"The Mango Avenue signature", pkg_kicker:"Lesson + photos", pkg_h2:"Surf it. Keep the proof.",
+  pkg_p:"We teach your first wave — and photograph it. One booking, one morning:",
+  pkg_li1:"Surf lesson with a local instructor", pkg_li2:"Board and rash guard included",
+  pkg_li3:"A photographer shooting your whole session", pkg_li4:"Edited photos delivered to your phone the same day",
+  pkg_cta:"Book the lesson + photo package",
+  ab_kicker:"The name", ab_h2:"There really is a mango tree",
+  ab_p1:"A massive mango tree grows right above our shop, and it drops dozens of mangoes every single day. We named the place after it.",
+  ab_p2:"You'll find us where the tree is: the first shop on your right as you walk into El Tunco — surf gear in front, coffee in the morning, a glass of wine as the sun goes down over Surf City El Salvador.",
+  gr_kicker:"Groups & retreats", gr_h2:"Hosting a retreat in El Tunco?",
+  gr_p:"Boards, lessons and a photographer for your whole group — arranged in one WhatsApp message. Yoga retreats, surf trips, bachelor(ette)s: tell us dates and headcount, we handle the rest.",
+  gr_cta:"Plan your group visit",
+  fu_kicker:"Find us", fu_h2:"You literally can't miss us",
+  fu_s1:"Walk through the main entrance of El Tunco, past the security checkpoint.",
+  fu_s2:"We're immediately on your RIGHT, next to the supermarket, in front of Mira Surf.",
+  fu_s3:"Look up — if there's a mango tree above you, you've arrived.",
+  fu_hours:"Open every day, 6 AM to 8 PM. El Tunco, La Libertad, El Salvador.",
+  ft_tag:"surf • coffee • wine — From first light to last glass.",
+  ft_age:"Alcohol served and sold to guests of legal drinking age only. Please drink responsibly.",
+  ft_loc:"El Tunco · Surf City · El Salvador",
+  wa_general:"Hi Mango Avenue! 👋", wa_lesson:"Hi! I'd like to book a surf lesson 🌊",
+  wa_rental:"Hi! I'd like to rent a surfboard 🏄", wa_photo:"Hi! I'd like to book a surf photo session 📸",
+  wa_package:"Hi! I'd like to book the surf lesson + photo package 🏄📸", wa_group:"Hi! I'm organizing a group/retreat and would like to plan a visit"
+},
+es:{
+  nav_book:"Reservar por WhatsApp",
+  hero_kicker:"surf • café • vino",
+  hero_tagline:"De la primera luz a la última copa.",
+  hero_sub:"Surf shop, alquiler de tablas y café en El Tunco, El Salvador",
+  hero_cta1:"Reserva una clase de surf", hero_cta2:"Alquila una tabla",
+  strip_hours:"Abierto todos los días 6 AM – 8 PM", strip_loc:"En la entrada del pueblo, primera tienda a tu derecha",
+  svc_kicker:"Qué hacemos", svc_h2:"Todo lo que necesitas para un día en el mar — y después",
+  svc_lead:"Una sola tienda en la entrada de El Tunco: tablas, clases, fotógrafo en el agua, café salvadoreño de verdad y una copa de vino cuando cae el sol.",
+  c1_h:"Alquiler de tablas de surf", c1_p:"Shortboards, longboards y soft-tops, por hora o por día. Entra, agarra tu tabla — la playa está ahí mismo.", c1_a:"Reserva tu tabla →",
+  c2_h:"Clases de surf", c2_p:"Aprende a surfear en El Tunco con instructores locales que crecieron en estas olas — principiantes bienvenidos, clases privadas y en grupo.", c2_a:"Reserva una clase →",
+  c3_h:"Fotografía de surf", c3_p:"Un fotógrafo captura tu sesión en El Tunco o El Sunzal. Llévate pruebas, no solo historias.", c3_a:"Reserva una sesión →",
+  c4_h:"Café salvadoreño", c4_p:"Abrimos a las 6 AM para el dawn patrol. Café cultivado en estas montañas, servido a pasos de la playa.", c4_a:"Pregunta qué hay →",
+  c5_h:"Vinos y licores", c5_p:"Una selección de vinos y licores bien curada — elegida por la familia detrás de una de las licorerías más grandes de las Carolinas (EE.UU.).", c5_a:"Mira la selección →",
+  c6_h:"Merch y arte de surf", c6_p:"Camisetas de El Tunco, arte de surf y piezas que no encontrarás en un aeropuerto. Llévate Surf City a casa.", c6_a:"Pregunta qué hay →",
+  pkg_badge:"La firma de Mango Avenue", pkg_kicker:"Clase + fotos", pkg_h2:"Surfea. Llévate la prueba.",
+  pkg_p:"Te enseñamos tu primera ola — y la fotografiamos. Una reserva, una mañana:",
+  pkg_li1:"Clase de surf con instructor local", pkg_li2:"Tabla y lycra incluidas",
+  pkg_li3:"Un fotógrafo capturando toda tu sesión", pkg_li4:"Fotos editadas en tu teléfono el mismo día",
+  pkg_cta:"Reserva clase + fotos",
+  ab_kicker:"El nombre", ab_h2:"De verdad hay un árbol de mango",
+  ab_p1:"Un enorme árbol de mango crece justo encima de nuestra tienda y deja caer docenas de mangos todos los días. Le pusimos el nombre por él.",
+  ab_p2:"Nos encuentras donde está el árbol: la primera tienda a tu derecha al entrar a El Tunco — surf al frente, café por la mañana y una copa de vino cuando el sol se esconde sobre Surf City El Salvador.",
+  gr_kicker:"Grupos y retiros", gr_h2:"¿Organizas un retiro en El Tunco?",
+  gr_p:"Tablas, clases y fotógrafo para todo tu grupo — todo con un solo mensaje de WhatsApp. Retiros de yoga, viajes de surf, despedidas: dinos fechas y cuántos son, nosotros nos encargamos.",
+  gr_cta:"Planea tu visita en grupo",
+  fu_kicker:"Encuéntranos", fu_h2:"Es imposible perderse",
+  fu_s1:"Entra por la entrada principal de El Tunco, pasando el control de seguridad.",
+  fu_s2:"Estamos inmediatamente a tu DERECHA, junto al supermercado, frente a Mira Surf.",
+  fu_s3:"Mira hacia arriba — si hay un árbol de mango sobre ti, ya llegaste.",
+  fu_hours:"Abierto todos los días de 6 AM a 8 PM. El Tunco, La Libertad, El Salvador.",
+  ft_tag:"surf • café • vino — De la primera luz a la última copa.",
+  ft_age:"Alcohol servido y vendido solo a mayores de edad. Bebe con responsabilidad.",
+  ft_loc:"El Tunco · Surf City · El Salvador",
+  wa_general:"¡Hola Mango Avenue! 👋", wa_lesson:"¡Hola! Quiero reservar una clase de surf 🌊",
+  wa_rental:"¡Hola! Quiero alquilar una tabla de surf 🏄", wa_photo:"¡Hola! Quiero reservar una sesión de fotos de surf 📸",
+  wa_package:"¡Hola! Quiero reservar el paquete clase + fotos 🏄📸", wa_group:"¡Hola! Organizo un grupo/retiro y quiero planear una visita"
+},
+pt:{
+  nav_book:"Reservar pelo WhatsApp",
+  hero_kicker:"surf • café • vinho",
+  hero_tagline:"Da primeira luz ao último gole.",
+  hero_sub:"Surf shop, aluguel de pranchas e café em El Tunco, El Salvador",
+  hero_cta1:"Reserve uma aula de surf", hero_cta2:"Alugue uma prancha",
+  strip_hours:"Aberto todos os dias, 6h – 20h", strip_loc:"Na entrada da vila, primeira loja à sua direita",
+  svc_kicker:"O que fazemos", svc_h2:"Tudo o que você precisa para um dia no mar — e depois dele",
+  svc_lead:"Uma única loja na entrada de El Tunco: pranchas, aulas, fotógrafo na água, café salvadorenho de verdade e uma taça de vinho quando o sol se põe.",
+  c1_h:"Aluguel de pranchas", c1_p:"Shortboards, longboards e soft-tops, por hora ou por dia. Entre, pegue sua prancha — a praia está logo ali.", c1_a:"Reserve sua prancha →",
+  c2_h:"Aulas de surf", c2_p:"Aprenda a surfar em El Tunco com instrutores locais que cresceram nessas ondas — iniciantes bem-vindos, aulas particulares e em grupo.", c2_a:"Reserve uma aula →",
+  c3_h:"Fotografia de surf", c3_p:"Um fotógrafo registra sua sessão em El Tunco ou El Sunzal. Leve provas, não só histórias.", c3_a:"Reserve uma sessão →",
+  c4_h:"Café salvadorenho", c4_p:"Abrimos às 6h para o dawn patrol. Café cultivado nestas montanhas, servido a passos da praia.", c4_a:"Pergunte o que tem →",
+  c5_h:"Vinhos e destilados", c5_p:"Uma seleção caprichada de vinhos e destilados — escolhida pela família por trás de uma das maiores lojas de bebidas das Carolinas (EUA).", c5_a:"Veja a seleção →",
+  c6_h:"Merch e arte de surf", c6_p:"Camisetas de El Tunco, arte de surf e peças que você não encontra em aeroporto. Leve a Surf City para casa.", c6_a:"Pergunte o que tem →",
+  pkg_badge:"A assinatura da Mango Avenue", pkg_kicker:"Aula + fotos", pkg_h2:"Surfe. Leve a prova.",
+  pkg_p:"Ensinamos sua primeira onda — e a fotografamos. Uma reserva, uma manhã:",
+  pkg_li1:"Aula de surf com instrutor local", pkg_li2:"Prancha e lycra incluídas",
+  pkg_li3:"Um fotógrafo registrando toda a sua sessão", pkg_li4:"Fotos editadas no seu celular no mesmo dia",
+  pkg_cta:"Reserve aula + fotos",
+  ab_kicker:"O nome", ab_h2:"Existe mesmo uma mangueira",
+  ab_p1:"Uma mangueira enorme cresce bem em cima da nossa loja e derruba dezenas de mangas todos os dias. Demos o nome por causa dela.",
+  ab_p2:"Você nos encontra onde está a árvore: a primeira loja à sua direita ao entrar em El Tunco — surf na frente, café de manhã e uma taça de vinho quando o sol se põe sobre a Surf City El Salvador.",
+  gr_kicker:"Grupos e retiros", gr_h2:"Organizando um retiro em El Tunco?",
+  gr_p:"Pranchas, aulas e fotógrafo para o seu grupo inteiro — tudo com uma única mensagem no WhatsApp. Retiros de yoga, surf trips, despedidas: diga as datas e quantos são, cuidamos do resto.",
+  gr_cta:"Planeje a visita do seu grupo",
+  fu_kicker:"Onde estamos", fu_h2:"É impossível não achar",
+  fu_s1:"Entre pela entrada principal de El Tunco, passando o controle de segurança.",
+  fu_s2:"Estamos imediatamente à sua DIREITA, ao lado do supermercado, em frente ao Mira Surf.",
+  fu_s3:"Olhe para cima — se houver uma mangueira sobre você, chegou.",
+  fu_hours:"Aberto todos os dias, das 6h às 20h. El Tunco, La Libertad, El Salvador.",
+  ft_tag:"surf • café • vinho — Da primeira luz ao último gole.",
+  ft_age:"Álcool servido e vendido apenas a maiores de idade. Beba com responsabilidade.",
+  ft_loc:"El Tunco · Surf City · El Salvador",
+  wa_general:"Olá Mango Avenue! 👋", wa_lesson:"Olá! Quero reservar uma aula de surf 🌊",
+  wa_rental:"Olá! Quero alugar uma prancha 🏄", wa_photo:"Olá! Quero reservar uma sessão de fotos de surf 📸",
+  wa_package:"Olá! Quero reservar o pacote aula + fotos 🏄📸", wa_group:"Olá! Estou organizando um grupo/retiro e quero planejar uma visita"
+},
+fr:{
+  nav_book:"Réserver sur WhatsApp",
+  hero_kicker:"surf • café • vin",
+  hero_tagline:"De la première lumière au dernier verre.",
+  hero_sub:"Surf shop, location de planches et café à El Tunco, El Salvador",
+  hero_cta1:"Réserver un cours de surf", hero_cta2:"Louer une planche",
+  strip_hours:"Ouvert tous les jours, 6h – 20h", strip_loc:"À l'entrée du village, première boutique à droite",
+  svc_kicker:"Ce qu'on fait", svc_h2:"Tout ce qu'il faut pour une journée dans l'eau — et après",
+  svc_lead:"Une seule boutique à l'entrée d'El Tunco : planches, cours, photographe dans l'eau, vrai café salvadorien et un verre de vin au coucher du soleil.",
+  c1_h:"Location de planches", c1_p:"Shortboards, longboards et soft-tops, à l'heure ou à la journée. Entrez, prenez une planche — la plage est juste là.", c1_a:"Réserver une planche →",
+  c2_h:"Cours de surf", c2_p:"Apprenez à surfer à El Tunco avec des instructeurs locaux qui ont grandi sur ces vagues — débutants bienvenus, cours privés ou en groupe.", c2_a:"Réserver un cours →",
+  c3_h:"Photographie de surf", c3_p:"Un photographe immortalise votre session à El Tunco ou El Sunzal. Repartez avec des preuves, pas seulement des histoires.", c3_a:"Réserver une séance →",
+  c4_h:"Café salvadorien", c4_p:"Ouvert dès 6h pour le dawn patrol. Un café cultivé dans ces montagnes, servi à deux pas de la plage.", c4_a:"Demandez ce qui se prépare →",
+  c5_h:"Vins et spiritueux", c5_p:"Une sélection soignée de vins et spiritueux — choisie par la famille derrière l'un des plus grands cavistes des Carolines (États-Unis).", c5_a:"Voir la sélection →",
+  c6_h:"Merch et art de surf", c6_p:"T-shirts El Tunco, art du surf et pièces introuvables en aéroport. Emportez Surf City chez vous.", c6_a:"Demandez ce qu'on a →",
+  pkg_badge:"La signature Mango Avenue", pkg_kicker:"Cours + photos", pkg_h2:"Surfez. Gardez la preuve.",
+  pkg_p:"On vous apprend votre première vague — et on la photographie. Une réservation, une matinée :",
+  pkg_li1:"Cours de surf avec un instructeur local", pkg_li2:"Planche et lycra inclus",
+  pkg_li3:"Un photographe pendant toute votre session", pkg_li4:"Photos retouchées livrées sur votre téléphone le jour même",
+  pkg_cta:"Réserver le pack cours + photos",
+  ab_kicker:"Le nom", ab_h2:"Il y a vraiment un manguier",
+  ab_p1:"Un immense manguier pousse juste au-dessus de notre boutique et laisse tomber des dizaines de mangues chaque jour. On lui doit notre nom.",
+  ab_p2:"Vous nous trouverez là où est l'arbre : la première boutique à droite en entrant dans El Tunco — le surf devant, le café le matin, un verre de vin quand le soleil se couche sur Surf City El Salvador.",
+  gr_kicker:"Groupes et retraites", gr_h2:"Vous organisez une retraite à El Tunco ?",
+  gr_p:"Planches, cours et photographe pour tout votre groupe — organisés en un seul message WhatsApp. Retraites de yoga, surf trips, enterrements de vie : donnez-nous les dates et le nombre, on s'occupe du reste.",
+  gr_cta:"Planifier votre visite de groupe",
+  fu_kicker:"Nous trouver", fu_h2:"Impossible de nous rater",
+  fu_s1:"Passez l'entrée principale d'El Tunco, après le poste de sécurité.",
+  fu_s2:"Nous sommes immédiatement à votre DROITE, à côté du supermarché, en face de Mira Surf.",
+  fu_s3:"Levez les yeux — s'il y a un manguier au-dessus de vous, vous y êtes.",
+  fu_hours:"Ouvert tous les jours de 6h à 20h. El Tunco, La Libertad, El Salvador.",
+  ft_tag:"surf • café • vin — De la première lumière au dernier verre.",
+  ft_age:"Alcool servi et vendu uniquement aux personnes majeures. À consommer avec modération.",
+  ft_loc:"El Tunco · Surf City · El Salvador",
+  wa_general:"Bonjour Mango Avenue ! 👋", wa_lesson:"Bonjour ! Je voudrais réserver un cours de surf 🌊",
+  wa_rental:"Bonjour ! Je voudrais louer une planche 🏄", wa_photo:"Bonjour ! Je voudrais réserver une séance photo de surf 📸",
+  wa_package:"Bonjour ! Je voudrais réserver le pack cours + photos 🏄📸", wa_group:"Bonjour ! J'organise un groupe/une retraite et je voudrais planifier une visite"
+},
+de:{
+  nav_book:"Über WhatsApp buchen",
+  hero_kicker:"Surf • Kaffee • Wein",
+  hero_tagline:"Vom ersten Licht bis zum letzten Glas.",
+  hero_sub:"Surfshop, Boardverleih & Kaffee in El Tunco, El Salvador",
+  hero_cta1:"Surfstunde buchen", hero_cta2:"Board mieten",
+  strip_hours:"Täglich geöffnet, 6 – 20 Uhr", strip_loc:"Am Ortseingang, erster Laden rechts",
+  svc_kicker:"Was wir machen", svc_h2:"Alles für einen Tag im Wasser — und danach",
+  svc_lead:"Ein Laden am Eingang von El Tunco: Boards, Surfkurse, ein Fotograf im Wasser, echter salvadorianischer Kaffee und ein Glas Wein zum Sonnenuntergang.",
+  c1_h:"Surfboard-Verleih", c1_p:"Shortboards, Longboards und Soft-Tops, stunden- oder tageweise. Reinkommen, Board schnappen — der Strand ist direkt da.", c1_a:"Board reservieren →",
+  c2_h:"Surfkurse", c2_p:"Surfen lernen in El Tunco mit lokalen Lehrern, die auf diesen Wellen aufgewachsen sind — Anfänger willkommen, privat oder in der Gruppe.", c2_a:"Kurs buchen →",
+  c3_h:"Surf-Fotografie", c3_p:"Ein Fotograf begleitet deine Session in El Tunco oder El Sunzal. Nimm Beweise mit, nicht nur Geschichten.", c3_a:"Fotosession buchen →",
+  c4_h:"Salvadorianischer Kaffee", c4_p:"Ab 6 Uhr geöffnet für die Dawn Patrol. Kaffee aus diesen Bergen, ein paar Schritte vom Strand gebrüht.", c4_a:"Frag, was es gibt →",
+  c5_h:"Wein & Spirituosen", c5_p:"Ein sorgfältig kuratiertes Regal mit Wein und Spirituosen — kuratiert von der Familie hinter einem der größten Spirituosengeschäfte der Carolinas (USA).", c5_a:"Auswahl ansehen →",
+  c6_h:"Surf-Merch & Kunst", c6_p:"El-Tunco-Shirts, Surf-Kunst und Stücke, die es in keinem Flughafenshop gibt. Nimm Surf City mit nach Hause.", c6_a:"Frag, was da ist →",
+  pkg_badge:"Das Markenzeichen von Mango Avenue", pkg_kicker:"Kurs + Fotos", pkg_h2:"Surf die Welle. Behalte den Beweis.",
+  pkg_p:"Wir bringen dir deine erste Welle bei — und fotografieren sie. Eine Buchung, ein Vormittag:",
+  pkg_li1:"Surfstunde mit lokalem Lehrer", pkg_li2:"Board und Lycra inklusive",
+  pkg_li3:"Ein Fotograf begleitet deine ganze Session", pkg_li4:"Bearbeitete Fotos noch am selben Tag auf deinem Handy",
+  pkg_cta:"Kurs + Foto-Paket buchen",
+  ab_kicker:"Der Name", ab_h2:"Es gibt wirklich einen Mangobaum",
+  ab_p1:"Ein riesiger Mangobaum wächst direkt über unserem Laden und wirft jeden Tag Dutzende Mangos ab. Nach ihm haben wir uns benannt.",
+  ab_p2:"Du findest uns dort, wo der Baum steht: der erste Laden rechts am Eingang von El Tunco — Surfausrüstung vorn, morgens Kaffee, abends ein Glas Wein, wenn die Sonne über Surf City El Salvador untergeht.",
+  gr_kicker:"Gruppen & Retreats", gr_h2:"Du planst ein Retreat in El Tunco?",
+  gr_p:"Boards, Kurse und ein Fotograf für deine ganze Gruppe — organisiert mit einer einzigen WhatsApp-Nachricht. Yoga-Retreats, Surftrips, Junggesellenabschiede: Nenn uns Termin und Gruppengröße, wir kümmern uns um den Rest.",
+  gr_cta:"Gruppenbesuch planen",
+  fu_kicker:"So findest du uns", fu_h2:"Du kannst uns nicht verfehlen",
+  fu_s1:"Geh durch den Haupteingang von El Tunco, am Sicherheitsposten vorbei.",
+  fu_s2:"Wir sind sofort auf der RECHTEN Seite, neben dem Supermarkt, gegenüber von Mira Surf.",
+  fu_s3:"Schau nach oben — wenn über dir ein Mangobaum steht, bist du da.",
+  fu_hours:"Täglich geöffnet von 6 bis 20 Uhr. El Tunco, La Libertad, El Salvador.",
+  ft_tag:"Surf • Kaffee • Wein — Vom ersten Licht bis zum letzten Glas.",
+  ft_age:"Alkohol wird nur an Volljährige ausgeschenkt und verkauft. Bitte verantwortungsvoll genießen.",
+  ft_loc:"El Tunco · Surf City · El Salvador",
+  wa_general:"Hallo Mango Avenue! 👋", wa_lesson:"Hallo! Ich möchte eine Surfstunde buchen 🌊",
+  wa_rental:"Hallo! Ich möchte ein Surfboard mieten 🏄", wa_photo:"Hallo! Ich möchte eine Surf-Fotosession buchen 📸",
+  wa_package:"Hallo! Ich möchte das Kurs + Foto-Paket buchen 🏄📸", wa_group:"Hallo! Ich organisiere eine Gruppe/ein Retreat und möchte einen Besuch planen"
+}
+};
+
+function setLang(lang){
+  const d = I18N[lang]; if(!d) return;
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const k = el.getAttribute("data-i18n");
+    if(d[k]) el.innerHTML = d[k];
+  });
+  document.querySelectorAll("[data-wa]").forEach(el=>{
+    const k = el.getAttribute("data-wa");
+    el.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(d[k] || d.wa_general);
+  });
+  document.querySelectorAll("#langs button").forEach(b=>b.classList.toggle("on", b.dataset.lang===lang));
+  try{localStorage.setItem("ma_lang", lang);}catch(e){}
+}
+document.querySelectorAll("#langs button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+let saved="en";
+try{saved = localStorage.getItem("ma_lang") || (navigator.language||"en").slice(0,2);}catch(e){}
+setLang(I18N[saved] ? saved : "en");
+</script>
+</body>
+</html>
