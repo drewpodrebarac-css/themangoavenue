@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 560">
+  <defs>
+    <radialGradient id="mg" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#FFD98E"/>
+      <stop offset="55%" stop-color="#FFB03A"/>
+      <stop offset="100%" stop-color="#E8842B"/>
+    </radialGradient>
+    <linearGradient id="wv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15A3B0"/>
+      <stop offset="100%" stop-color="#0E7C86"/>
+    </linearGradient>
+  </defs>
+
+  <!-- back wave sweep, full width -->
+  <path d="M0,392 C240,318 420,458 700,412 C980,366 1120,470 1400,404 L1400,560 L0,560 Z" fill="url(#wv)" opacity="0.16"/>
+  <path d="M0,436 C260,378 480,494 760,452 C1040,410 1180,500 1400,448 L1400,560 L0,560 Z" fill="url(#wv)" opacity="0.22"/>
+
+  <!-- breaking curl on the left -->
+  <g opacity="0.85">
+    <path d="M90,430 C60,240 220,140 360,180 C300,190 240,230 230,300 C330,262 400,300 420,370 C350,340 280,350 250,430 Z" fill="url(#wv)" opacity="0.45"/>
+    <circle cx="120" cy="250" r="14" fill="#fff" opacity="0.7"/>
+    <circle cx="160" cy="205" r="9" fill="#fff" opacity="0.6"/>
+    <circle cx="215" cy="175" r="7" fill="#fff" opacity="0.5"/>
+  </g>
+
+  <!-- THE MANGO SURFER (left of center) -->
+  <g transform="translate(320,255) rotate(-10)">
+    <!-- spray -->
+    <circle cx="-115" cy="132" r="12" fill="#fff" opacity="0.75"/>
+    <circle cx="-142" cy="112" r="8" fill="#fff" opacity="0.6"/>
+    <circle cx="132" cy="140" r="10" fill="#fff" opacity="0.7"/>
+    <circle cx="158" cy="120" r="7" fill="#fff" opacity="0.55"/>
+    <!-- board -->
+    <g transform="translate(0,128)">
+      <rect x="-140" y="-14" width="280" height="28" rx="14" fill="#FF6B4A"/>
+      <line x1="-120" y1="0" x2="120" y2="0" stroke="#C94F3D" stroke-width="4" stroke-linecap="round"/>
+      <path d="M28,14 L44,44 L58,14 Z" fill="#0A5560"/>
+    </g>
+    <!-- legs -->
+    <path d="M-38,74 C-46,96 -52,108 -60,118" stroke="#2E5E4E" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M34,76 C42,94 48,106 56,116" stroke="#2E5E4E" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="0" cy="0" rx="78" ry="92" fill="url(#mg)" transform="rotate(6)"/>
+    <!-- leaf -->
+    <path d="M8,-88 C34,-122 78,-120 96,-96 C64,-96 40,-84 26,-70 Z" fill="#2E5E4E"/>
+    <path d="M10,-90 C4,-104 6,-116 14,-126" stroke="#2E5E4E" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- arms out -->
+    <path d="M-70,-8 C-102,-20 -122,-34 -132,-52" stroke="#E8842B" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M70,-4 C100,2 122,-2 140,-16" stroke="#E8842B" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <!-- sunglasses -->
+    <g fill="#1C2321">
+      <rect x="-52" y="-36" width="42" height="26" rx="10"/>
+      <rect x="6" y="-36" width="42" height="26" rx="10"/>
+      <rect x="-12" y="-30" width="20" height="6" rx="3"/>
+    </g>
+    <!-- smile -->
+    <path d="M-24,18 C-10,34 14,34 28,16" stroke="#1C2321" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- small wave + sun accents on the right -->
+  <g opacity="0.8">
+    <path d="M1080,470 C1110,410 1170,400 1210,430 C1180,432 1150,446 1140,470 Z" fill="url(#wv)" opacity="0.4"/>
+    <circle cx="1245" cy="150" r="46" fill="#FFB03A" opacity="0.35"/>
+    <circle cx="1245" cy="150" r="30" fill="#FFD98E" opacity="0.5"/>
+    <path d="M1010,200 q14,-22 28,0 q14,22 28,0" stroke="#0E7C86" stroke-width="6" fill="none" opacity="0.35" stroke-linecap="round"/>
+    <path d="M1060,240 q14,-22 28,0 q14,22 28,0" stroke="#0E7C86" stroke-width="6" fill="none" opacity="0.28" stroke-linecap="round"/>
+  </g>
+</svg>
