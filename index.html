@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mango Avenue | Surf Shop, Lessons & Coffee in El Tunco, Surf City El Salvador</title>
-<meta name="description" content="Surf shop, board rentals, surf lessons, surf photography, coffee & wine in El Tunco, El Salvador. First shop on your right at the town entrance, next to the supermarket. Open daily 6 AM – 8 PM. Book on WhatsApp.">
+<meta name="description" content="Surf shop, board rentals, surf lessons, surf photography, coffee & wine in the heart of El Tunco, Surf City El Salvador. First shop on your right at the town entrance, next to the supermarket. Open daily 6 AM – 8 PM. Book on WhatsApp.">
 <meta property="og:title" content="Mango Avenue — Surf • Coffee • Wine — El Tunco, El Salvador">
 <meta property="og:description" content="From first light to last glass. Board rentals, surf lessons & photo sessions in Surf City El Salvador.">
 <meta property="og:type" content="business.business">
+<meta property="og:image" content="https://themangoavenue.com/img/storefront.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -55,8 +56,8 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.92);backdrop-f
 .wa-nav{background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:.45rem .8rem;border-radius:2rem;white-space:nowrap}
 
 /* ---------- hero ---------- */
-header{position:relative;overflow:hidden;background:linear-gradient(175deg,#FFD98E 0%,var(--mango) 30%,var(--sunset) 68%,#C94F3D 100%);color:#fff;text-align:center;padding:4.5rem 1.25rem 0}
-.sun{position:absolute;top:2.2rem;right:8%;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#FFF3D6,#FFC95E 55%,var(--mango-deep));box-shadow:0 0 80px 30px rgba(255,220,140,.55);opacity:.9}
+header{position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(30,18,10,.30) 0%,rgba(90,35,18,.45) 60%,rgba(60,22,12,.60) 100%),url("img/storefront.jpg") center 38%/cover no-repeat;color:#fff;text-align:center;padding:5.5rem 1.25rem 0}
+.sun{display:none}
 .hero-in{position:relative;max-width:760px;margin:0 auto;z-index:2}
 .kicker{font-size:.95rem;letter-spacing:.35em;text-transform:uppercase;font-weight:700;text-shadow:0 1px 8px rgba(120,40,20,.35)}
 header h1{font-size:clamp(2.6rem,8vw,4.6rem);margin:.4rem 0 .3rem;text-shadow:0 2px 14px rgba(120,40,20,.35)}
@@ -84,6 +85,7 @@ section h2{font-size:clamp(1.7rem,4.5vw,2.4rem);margin:.25rem 0 .9rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1.1rem;margin-top:1.8rem}
 .card{background:#fff;border:1px solid var(--line);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column}
 .ph{height:150px;display:flex;align-items:center;justify-content:center;font-size:2.6rem;color:#fff}
+img.ph{width:100%;height:170px;object-fit:cover;display:block}
 /* photo slots — replace each .ph div with <img src="..."> when real photos arrive */
 .ph-1{background:linear-gradient(135deg,var(--ocean),#15A3B0)}
 .ph-2{background:linear-gradient(135deg,var(--sunset),var(--mango))}
@@ -152,7 +154,7 @@ footer a{color:var(--mango)}
     <p class="kicker" data-i18n="hero_kicker">surf • coffee • wine</p>
     <h1>Mango Avenue</h1>
     <p class="tagline" data-i18n="hero_tagline">From first light to last glass.</p>
-    <p class="sub-h1" data-i18n="hero_sub">Surf shop, board rentals &amp; coffee in El Tunco, El Salvador</p>
+    <p class="sub-h1" data-i18n="hero_sub">Surf shop, board rentals &amp; coffee in the heart of El Tunco, El Salvador</p>
     <div class="hero-cta">
       <a class="btn btn-solid" data-wa="wa_lesson" data-i18n="hero_cta1" href="#">Book a surf lesson</a>
       <a class="btn btn-line" data-wa="wa_rental" data-i18n="hero_cta2" href="#">Rent a board</a>
@@ -176,8 +178,7 @@ footer a{color:var(--mango)}
     <p class="lead" data-i18n="svc_lead">One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, real Salvadoran coffee, and a glass of wine when the sun drops.</p>
     <div class="grid">
       <div class="card">
-        <!-- PHOTO SLOT: boards on the rack -->
-        <div class="ph ph-1">🏄</div>
+        <img class="ph" src="img/interior.jpg" alt="Surfboards, tees and gear inside Mango Avenue surf shop in El Tunco, El Salvador">
         <div class="card-body">
           <h3 data-i18n="c1_h">Surfboard rentals</h3>
           <p data-i18n="c1_p">Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board, the beach is right there.</p>
@@ -212,8 +213,7 @@ footer a{color:var(--mango)}
         </div>
       </div>
       <div class="card">
-        <!-- PHOTO SLOT: wine / bottle shelf at sunset -->
-        <div class="ph ph-5">🍷</div>
+        <img class="ph" src="img/bottles.jpg" alt="Curated shelf of wine, tequila and bourbon at Mango Avenue, El Tunco">
         <div class="card-body">
           <h3 data-i18n="c5_h">Wine &amp; spirits</h3>
           <p data-i18n="c5_p">A properly curated shelf of wine and spirits — chosen by the family behind one of the largest liquor stores in the Carolinas (USA).</p>
@@ -221,8 +221,7 @@ footer a{color:var(--mango)}
         </div>
       </div>
       <div class="card">
-        <!-- PHOTO SLOT: merch / art wall -->
-        <div class="ph ph-6">🎨</div>
+        <img class="ph" src="img/fins.jpg" alt="Surfboard fins displayed as wall art at Mango Avenue surf shop, El Tunco">
         <div class="card-body">
           <h3 data-i18n="c6_h">Surf merch &amp; art</h3>
           <p data-i18n="c6_p">El Tunco tees, surf art and pieces you won't find in an airport gift shop. Take Surf City home.</p>
@@ -302,7 +301,7 @@ en:{
   nav_book:"Book on WhatsApp",
   hero_kicker:"surf • coffee • wine",
   hero_tagline:"From first light to last glass.",
-  hero_sub:"Surf shop, board rentals & coffee in El Tunco, El Salvador",
+  hero_sub:"Surf shop, board rentals & coffee in the heart of El Tunco, El Salvador",
   hero_cta1:"Book a surf lesson", hero_cta2:"Rent a board",
   strip_hours:"Open daily 6 AM – 8 PM", strip_loc:"Town entrance, first shop on your right",
   svc_kicker:"What we do", svc_h2:"Everything you need for a day in the water — and after it",
@@ -340,7 +339,7 @@ es:{
   nav_book:"Reservar por WhatsApp",
   hero_kicker:"surf • café • vino",
   hero_tagline:"De la primera luz a la última copa.",
-  hero_sub:"Surf shop, alquiler de tablas y café en El Tunco, El Salvador",
+  hero_sub:"Surf shop, alquiler de tablas y café en el corazón de El Tunco, El Salvador",
   hero_cta1:"Reserva una clase de surf", hero_cta2:"Alquila una tabla",
   strip_hours:"Abierto todos los días 6 AM – 8 PM", strip_loc:"En la entrada del pueblo, primera tienda a tu derecha",
   svc_kicker:"Qué hacemos", svc_h2:"Todo lo que necesitas para un día en el mar — y después",
@@ -378,7 +377,7 @@ pt:{
   nav_book:"Reservar pelo WhatsApp",
   hero_kicker:"surf • café • vinho",
   hero_tagline:"Da primeira luz ao último gole.",
-  hero_sub:"Surf shop, aluguel de pranchas e café em El Tunco, El Salvador",
+  hero_sub:"Surf shop, aluguel de pranchas e café no coração de El Tunco, El Salvador",
   hero_cta1:"Reserve uma aula de surf", hero_cta2:"Alugue uma prancha",
   strip_hours:"Aberto todos os dias, 6h – 20h", strip_loc:"Na entrada da vila, primeira loja à sua direita",
   svc_kicker:"O que fazemos", svc_h2:"Tudo o que você precisa para um dia no mar — e depois dele",
@@ -416,7 +415,7 @@ fr:{
   nav_book:"Réserver sur WhatsApp",
   hero_kicker:"surf • café • vin",
   hero_tagline:"De la première lumière au dernier verre.",
-  hero_sub:"Surf shop, location de planches et café à El Tunco, El Salvador",
+  hero_sub:"Surf shop, location de planches et café au cœur d'El Tunco, El Salvador",
   hero_cta1:"Réserver un cours de surf", hero_cta2:"Louer une planche",
   strip_hours:"Ouvert tous les jours, 6h – 20h", strip_loc:"À l'entrée du village, première boutique à droite",
   svc_kicker:"Ce qu'on fait", svc_h2:"Tout ce qu'il faut pour une journée dans l'eau — et après",
@@ -454,7 +453,7 @@ de:{
   nav_book:"Über WhatsApp buchen",
   hero_kicker:"Surf • Kaffee • Wein",
   hero_tagline:"Vom ersten Licht bis zum letzten Glas.",
-  hero_sub:"Surfshop, Boardverleih & Kaffee in El Tunco, El Salvador",
+  hero_sub:"Surfshop, Boardverleih & Kaffee im Herzen von El Tunco, El Salvador",
   hero_cta1:"Surfstunde buchen", hero_cta2:"Board mieten",
   strip_hours:"Täglich geöffnet, 6 – 20 Uhr", strip_loc:"Am Ortseingang, erster Laden rechts",
   svc_kicker:"Was wir machen", svc_h2:"Alles für einen Tag im Wasser — und danach",
