@@ -54,6 +54,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.92);backdrop-f
 .langs{display:flex;gap:.25rem;margin-left:auto}
 .swell{display:block;font-size:.88rem;font-weight:800;color:var(--sunset);margin-top:.4rem}
 .card .fc{font-weight:700;text-decoration:none;font-size:.85rem;color:var(--ocean-deep);margin-top:.45rem;display:inline-block}
+.price{display:inline-block;align-self:flex-start;font-weight:800;color:var(--palm);background:var(--sand);border-radius:2rem;padding:.2rem .75rem;font-size:.92rem}
 .break-badge{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:2rem;padding:.22rem .65rem;background:var(--sand);color:var(--ocean-deep);margin-bottom:.35rem}
 .langs button{border:1px solid var(--line);background:#fff;border-radius:.5rem;padding:.28rem .55rem;font-size:.78rem;font-weight:600;cursor:pointer;color:var(--ink)}
 .langs button.on{background:var(--ink);color:var(--sand);border-color:var(--ink)}
@@ -218,6 +219,7 @@ footer a{color:var(--mango)}
         <img class="ph" src="img/interior.jpg" alt="Surfboards, tees and gear inside Mango Avenue surf shop in El Tunco, El Salvador">
         <div class="card-body">
           <h3 data-i18n="c1_h">Surfboard rentals</h3>
+          <span class="price" data-i18n="c1_price">$10–$30 / day</span>
           <p data-i18n="c1_p">Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board — the beach is right there. Or don't walk at all: white-glove board delivery straight to the sand.</p>
           <a data-i18n="c1_a" href="#contact">Reserve a board →</a>
         </div>
@@ -393,7 +395,7 @@ en:{
   strip_breaks:"La Bocana: 45-sec walk · El Sunzal: 10 min", strip_hours:"Open daily 6 AM – 8 PM", strip_loc:"Town entrance, first shop on your right",
   svc_kicker:"What we do", svc_h2:"Good waves, good coffee, good people — every single day",
   svc_lead:"Warm water and waves 365 days a year. One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, matcha and real Salvadoran coffee — and a glass of wine when the sun drops.",
-  c1_h:"Surfboard rentals", c1_p:"Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board — the beach is right there. Or don't walk at all: white-glove board delivery straight to the sand.", c1_a:"Reserve a board →",
+  c1_h:"Surfboard rentals", c1_price:"$10–$30 / day", c1_p:"Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board — the beach is right there. Or don't walk at all: white-glove board delivery straight to the sand.", c1_a:"Reserve a board →",
   c2_h:"Surf lessons", c2_p:"Learn to surf in El Tunco with local instructors who grew up on these waves — beginners welcome, private and group classes.", c2_a:"Book a lesson →",
   c3_h:"Surf photography", c3_p:"A photographer shoots your session at El Tunco or El Sunzal. Leave with proof, not just stories.", c3_a:"Book a photo session →",
   c4_h:"Coffee & matcha", c4_p:"Open at 6 AM for dawn patrol. Salvadoran coffee and iced matcha, made steps from the beach — happiness in a cup.", c4_a:"Ask what's brewing →",
@@ -434,7 +436,7 @@ es:{
   strip_breaks:"La Bocana: a 45 seg a pie · El Sunzal: a 10 min", strip_hours:"Abierto todos los días 6 AM – 8 PM", strip_loc:"En la entrada del pueblo, primera tienda a tu derecha",
   svc_kicker:"Qué hacemos", svc_h2:"Buenas olas, buen café, buena gente — todos los días",
   svc_lead:"Agua cálida y olas los 365 días del año. Una sola tienda en la entrada de El Tunco: tablas, clases, fotógrafo en el agua, matcha y café salvadoreño de verdad — y una copa de vino cuando cae el sol.",
-  c1_h:"Alquiler de tablas de surf", c1_p:"Shortboards, longboards y soft-tops, por hora o por día. Entra, agarra tu tabla — la playa está ahí mismo. O no camines nada: entrega de guante blanco directo a la arena.", c1_a:"Reserva tu tabla →",
+  c1_h:"Alquiler de tablas de surf", c1_price:"$10–$30 / día", c1_p:"Shortboards, longboards y soft-tops, por hora o por día. Entra, agarra tu tabla — la playa está ahí mismo. O no camines nada: entrega de guante blanco directo a la arena.", c1_a:"Reserva tu tabla →",
   c2_h:"Clases de surf", c2_p:"Aprende a surfear en El Tunco con instructores locales que crecieron en estas olas — principiantes bienvenidos, clases privadas y en grupo.", c2_a:"Reserva una clase →",
   c3_h:"Fotografía de surf", c3_p:"Un fotógrafo captura tu sesión en El Tunco o El Sunzal. Llévate pruebas, no solo historias.", c3_a:"Reserva una sesión →",
   c4_h:"Café y matcha", c4_p:"Abrimos a las 6 AM para el dawn patrol. Café salvadoreño y matcha helado, a pasos de la playa — felicidad en un vaso.", c4_a:"Pregunta qué hay →",
@@ -475,7 +477,7 @@ pt:{
   strip_breaks:"La Bocana: 45 s a pé · El Sunzal: 10 min", strip_hours:"Aberto todos os dias, 6h – 20h", strip_loc:"Na entrada da vila, primeira loja à sua direita",
   svc_kicker:"O que fazemos", svc_h2:"Boas ondas, bom café, boa gente — todos os dias",
   svc_lead:"Água quente e ondas 365 dias por ano. Uma única loja na entrada de El Tunco: pranchas, aulas, fotógrafo na água, matcha e café salvadorenho de verdade — e uma taça de vinho quando o sol se põe.",
-  c1_h:"Aluguel de pranchas", c1_p:"Shortboards, longboards e soft-tops, por hora ou por dia. Entre, pegue sua prancha — a praia está logo ali. Ou nem caminhe: entrega de luva branca direto na areia.", c1_a:"Reserve sua prancha →",
+  c1_h:"Aluguel de pranchas", c1_price:"$10–$30 / dia", c1_p:"Shortboards, longboards e soft-tops, por hora ou por dia. Entre, pegue sua prancha — a praia está logo ali. Ou nem caminhe: entrega de luva branca direto na areia.", c1_a:"Reserve sua prancha →",
   c2_h:"Aulas de surf", c2_p:"Aprenda a surfar em El Tunco com instrutores locais que cresceram nessas ondas — iniciantes bem-vindos, aulas particulares e em grupo.", c2_a:"Reserve uma aula →",
   c3_h:"Fotografia de surf", c3_p:"Um fotógrafo registra sua sessão em El Tunco ou El Sunzal. Leve provas, não só histórias.", c3_a:"Reserve uma sessão →",
   c4_h:"Café e matcha", c4_p:"Abrimos às 6h para o dawn patrol. Café salvadorenho e matcha gelado, a passos da praia — felicidade num copo.", c4_a:"Pergunte o que tem →",
@@ -516,7 +518,7 @@ fr:{
   strip_breaks:"La Bocana : 45 s à pied · El Sunzal : 10 min", strip_hours:"Ouvert tous les jours, 6h – 20h", strip_loc:"À l'entrée du village, première boutique à droite",
   svc_kicker:"Ce qu'on fait", svc_h2:"De bonnes vagues, du bon café, des gens heureux — tous les jours",
   svc_lead:"Eau chaude et vagues 365 jours par an. Une seule boutique à l'entrée d'El Tunco : planches, cours, photographe dans l'eau, matcha et vrai café salvadorien — et un verre de vin au coucher du soleil.",
-  c1_h:"Location de planches", c1_p:"Shortboards, longboards et soft-tops, à l'heure ou à la journée. Entrez, prenez une planche — la plage est juste là. Ou ne marchez même pas : livraison gants blancs jusque sur le sable.", c1_a:"Réserver une planche →",
+  c1_h:"Location de planches", c1_price:"10–30 $ / jour", c1_p:"Shortboards, longboards et soft-tops, à l'heure ou à la journée. Entrez, prenez une planche — la plage est juste là. Ou ne marchez même pas : livraison gants blancs jusque sur le sable.", c1_a:"Réserver une planche →",
   c2_h:"Cours de surf", c2_p:"Apprenez à surfer à El Tunco avec des instructeurs locaux qui ont grandi sur ces vagues — débutants bienvenus, cours privés ou en groupe.", c2_a:"Réserver un cours →",
   c3_h:"Photographie de surf", c3_p:"Un photographe immortalise votre session à El Tunco ou El Sunzal. Repartez avec des preuves, pas seulement des histoires.", c3_a:"Réserver une séance →",
   c4_h:"Café et matcha", c4_p:"Ouvert dès 6h pour le dawn patrol. Café salvadorien et matcha glacé, à deux pas de la plage — du bonheur dans un verre.", c4_a:"Demandez ce qui se prépare →",
@@ -557,7 +559,7 @@ de:{
   strip_breaks:"La Bocana: 45 Sek. zu Fuß · El Sunzal: 10 Min.", strip_hours:"Täglich geöffnet, 6 – 20 Uhr", strip_loc:"Am Ortseingang, erster Laden rechts",
   svc_kicker:"Was wir machen", svc_h2:"Gute Wellen, guter Kaffee, gute Leute — jeden einzelnen Tag",
   svc_lead:"Warmes Wasser und Wellen an 365 Tagen im Jahr. Ein Laden am Eingang von El Tunco: Boards, Surfkurse, ein Fotograf im Wasser, Matcha und echter salvadorianischer Kaffee — und ein Glas Wein zum Sonnenuntergang.",
-  c1_h:"Surfboard-Verleih", c1_p:"Shortboards, Longboards und Soft-Tops, stunden- oder tageweise. Reinkommen, Board schnappen — der Strand ist direkt da. Oder lauf gar nicht erst: White-Glove-Lieferung direkt in den Sand.", c1_a:"Board reservieren →",
+  c1_h:"Surfboard-Verleih", c1_price:"10–30 $ / Tag", c1_p:"Shortboards, Longboards und Soft-Tops, stunden- oder tageweise. Reinkommen, Board schnappen — der Strand ist direkt da. Oder lauf gar nicht erst: White-Glove-Lieferung direkt in den Sand.", c1_a:"Board reservieren →",
   c2_h:"Surfkurse", c2_p:"Surfen lernen in El Tunco mit lokalen Lehrern, die auf diesen Wellen aufgewachsen sind — Anfänger willkommen, privat oder in der Gruppe.", c2_a:"Kurs buchen →",
   c3_h:"Surf-Fotografie", c3_p:"Ein Fotograf begleitet deine Session in El Tunco oder El Sunzal. Nimm Beweise mit, nicht nur Geschichten.", c3_a:"Fotosession buchen →",
   c4_h:"Kaffee & Matcha", c4_p:"Ab 6 Uhr geöffnet für die Dawn Patrol. Salvadorianischer Kaffee und Iced Matcha, ein paar Schritte vom Strand — Glück im Becher.", c4_a:"Frag, was es gibt →",
