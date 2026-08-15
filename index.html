@@ -109,6 +109,8 @@ img.ph{width:100%;height:170px;object-fit:cover;display:block}
 .feature li{margin:.3rem 0}
 .btn-mango{background:var(--mango);color:var(--ink)}
 .signup{background:linear-gradient(180deg,#FFFDF8,#FDF3E0)}
+.contact-links{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;margin-top:1.1rem}
+.contact-links a{background:#fff;border:1px solid var(--line);border-radius:2rem;padding:.55rem 1.1rem;text-decoration:none;font-weight:700;color:var(--ocean-deep)}
 .board{position:relative;margin:2rem auto 2.6rem;width:min(320px,86vw);padding:3.4rem 2.1rem 3.8rem;display:flex;flex-direction:column;gap:.85rem;background:linear-gradient(165deg,#FFD98E,var(--mango) 45%,var(--sunset));border-radius:50% 50% 46% 46%/16rem 16rem 6rem 6rem;box-shadow:0 14px 34px rgba(200,90,40,.35),inset 0 0 0 6px rgba(255,255,255,.55)}
 .board .stringer{position:absolute;top:1.2rem;bottom:1.2rem;left:50%;width:2px;background:rgba(120,50,20,.16)}
 .board input{position:relative;z-index:1;border:none;border-radius:2rem;padding:.72rem 1rem;font-size:.95rem;background:rgba(255,255,255,.94);color:var(--ink);text-align:center}
@@ -173,7 +175,7 @@ footer a{color:var(--mango)}
     <p class="hero-ig" style="margin-top:.5rem;font-size:1.05rem"><a href="https://www.instagram.com/themangoavenue" rel="noopener" style="color:inherit;text-decoration:none;font-weight:700">@themangoavenue</a></p>
     <div class="hero-cta">
       <a class="btn btn-solid" data-wa="wa_lesson" data-i18n="hero_cta1" href="#">Book a surf lesson</a>
-      <a class="btn btn-line" data-wa="wa_rental" data-i18n="hero_cta2" href="#">Rent a board</a>
+      <a class="btn btn-line" data-i18n="hero_cta2" href="#contact">Rent a board</a>
     </div>
   </div>
   <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#FFFDF8" d="M0,60 C240,110 480,10 720,45 C960,80 1200,20 1440,55 L1440,90 L0,90 Z"/></svg>
@@ -198,7 +200,7 @@ footer a{color:var(--mango)}
         <div class="card-body">
           <h3 data-i18n="c1_h">Surfboard rentals</h3>
           <p data-i18n="c1_p">Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board, the beach is right there.</p>
-          <a data-wa="wa_rental" data-i18n="c1_a" href="#">Reserve a board →</a>
+          <a data-i18n="c1_a" href="#contact">Reserve a board →</a>
         </div>
       </div>
       <div class="card">
@@ -206,7 +208,7 @@ footer a{color:var(--mango)}
         <div class="card-body">
           <h3 data-i18n="c2_h">Surf lessons</h3>
           <p data-i18n="c2_p">Learn to surf in El Tunco with local instructors who grew up on these waves — beginners welcome, private and group classes.</p>
-          <a data-wa="wa_lesson" data-i18n="c2_a" href="#">Book a lesson →</a>
+          <a data-i18n="c2_a" href="#contact">Book a lesson →</a>
         </div>
       </div>
       <div class="card">
@@ -214,7 +216,7 @@ footer a{color:var(--mango)}
         <div class="card-body">
           <h3 data-i18n="c3_h">Surf photography</h3>
           <p data-i18n="c3_p">A photographer shoots your session at El Tunco or El Sunzal. Leave with proof, not just stories.</p>
-          <a data-wa="wa_photo" data-i18n="c3_a" href="#">Book a photo session →</a>
+          <a data-i18n="c3_a" href="#contact">Book a photo session →</a>
         </div>
       </div>
       <div class="card">
@@ -222,7 +224,7 @@ footer a{color:var(--mango)}
         <div class="card-body">
           <h3 data-i18n="c4_h">Coffee &amp; matcha</h3>
           <p data-i18n="c4_p">Open at 6 AM for dawn patrol. Salvadoran coffee and iced matcha, made steps from the beach — happiness in a cup.</p>
-          <a data-wa="wa_general" data-i18n="c4_a" href="#">Ask what's brewing →</a>
+          <a data-i18n="c4_a" href="#contact">Ask what's brewing →</a>
         </div>
       </div>
       <div class="card">
@@ -230,7 +232,7 @@ footer a{color:var(--mango)}
         <div class="card-body">
           <h3 data-i18n="c5_h">Wine &amp; spirits</h3>
           <p data-i18n="c5_p">A properly curated shelf of wine and spirits — chosen by the family behind one of the largest liquor stores in the Carolinas (USA).</p>
-          <a data-wa="wa_general" data-i18n="c5_a" href="#">See the shelf →</a>
+          <a data-i18n="c5_a" href="#contact">See the shelf →</a>
         </div>
       </div>
       <div class="card">
@@ -238,7 +240,7 @@ footer a{color:var(--mango)}
         <div class="card-body">
           <h3 data-i18n="c6_h">Surf merch &amp; art</h3>
           <p data-i18n="c6_p">El Tunco tees, surf art and pieces you won't find in an airport gift shop. Take Surf City home.</p>
-          <a data-wa="wa_general" data-i18n="c6_a" href="#">Ask what's in store →</a>
+          <a data-i18n="c6_a" href="#contact">Ask what's in store →</a>
         </div>
       </div>
     </div>
@@ -283,15 +285,20 @@ footer a{color:var(--mango)}
     <p class="sec-kicker" data-i18n="gr_kicker">Groups &amp; retreats</p>
     <h2 data-i18n="gr_h2">Hosting a retreat in El Tunco?</h2>
     <p class="lead" data-i18n="gr_p">Boards, lessons and a photographer for your whole group — arranged in one WhatsApp message. Yoga retreats, surf trips, bachelor(ette)s: tell us dates and headcount, we handle the rest.</p>
-    <p style="margin-top:1rem"><a class="btn btn-solid" style="background:var(--ocean-deep);color:#fff" data-wa="wa_group" data-i18n="gr_cta" href="#">Plan your group visit</a></p>
+    <p style="margin-top:1rem"><a class="btn btn-solid" style="background:var(--ocean-deep);color:#fff" data-i18n="gr_cta" href="#contact">Plan your group visit</a></p>
   </div>
 </section>
 
-<section id="signup" class="signup">
+<section id="contact" class="signup">
   <div class="in" style="display:flex;flex-direction:column;align-items:center;text-align:center">
-    <p class="sec-kicker" data-i18n="su_kicker">Stay in the loop</p>
+    <p class="sec-kicker" data-i18n="su_kicker">Contact us · stay in the loop</p>
     <h2 data-i18n="su_h2">Join the Mango Avenue crew</h2>
     <p class="lead" data-i18n="su_p">Swell alerts, events, tastings and new boards — be the first to know.</p>
+    <div class="contact-links">
+      <a data-wa="wa_general" href="#">💬 WhatsApp +503 6014 7218</a>
+      <a href="https://www.instagram.com/themangoavenue" target="_blank" rel="noopener">📷 @themangoavenue</a>
+      <a href="#findus">📍 El Tunco · 6 AM – 8 PM</a>
+    </div>
     <form class="board" id="signupForm" autocomplete="on">
       <div class="stringer"></div>
       <input type="text" id="su_name" data-ph="su_name" placeholder="Name" required>
@@ -368,7 +375,7 @@ en:{
   fu_s2:"We're immediately on your RIGHT, next to the supermarket, in front of Mira Surf.",
   fu_s3:"Look up — if there's a mango tree above you, you've arrived.",
   fu_hours:"Open every day, 6 AM to 8 PM. El Tunco, La Libertad, El Salvador.",
-  su_kicker:"Stay in the loop", su_h2:"Join the Mango Avenue crew", su_p:"Swell alerts, events, tastings and new boards — be the first to know.", su_name:"Name", su_phone:"Phone / WhatsApp", su_email:"Email", su_ig:"Instagram @", su_btn:"Count me in 🤙",
+  su_kicker:"Contact us · stay in the loop", su_h2:"Join the Mango Avenue crew", su_p:"Swell alerts, events, tastings and new boards — be the first to know.", su_name:"Name", su_phone:"Phone / WhatsApp", su_email:"Email", su_ig:"Instagram @", su_btn:"Count me in 🤙",
   fu_map_btn:"Get directions in Google Maps →",
   ft_tag:"surf • coffee • wine — Love God, Love People, Surf.",
   ft_age:"Alcohol served and sold to guests of legal drinking age only. Please drink responsibly.",
@@ -408,7 +415,7 @@ es:{
   fu_s2:"Estamos inmediatamente a tu DERECHA, junto al supermercado, frente a Mira Surf.",
   fu_s3:"Mira hacia arriba — si hay un árbol de mango sobre ti, ya llegaste.",
   fu_hours:"Abierto todos los días de 6 AM a 8 PM. El Tunco, La Libertad, El Salvador.",
-  su_kicker:"Mantente al tanto", su_h2:"Únete a la crew de Mango Avenue", su_p:"Alertas de olas, eventos, catas y tablas nuevas — entérate primero.", su_name:"Nombre", su_phone:"Teléfono / WhatsApp", su_email:"Correo", su_ig:"Instagram @", su_btn:"¡Apúntame! 🤙",
+  su_kicker:"Contacto · mantente al tanto", su_h2:"Únete a la crew de Mango Avenue", su_p:"Alertas de olas, eventos, catas y tablas nuevas — entérate primero.", su_name:"Nombre", su_phone:"Teléfono / WhatsApp", su_email:"Correo", su_ig:"Instagram @", su_btn:"¡Apúntame! 🤙",
   fu_map_btn:"Cómo llegar en Google Maps →",
   ft_tag:"surf • café • vino — Ama a Dios, Ama a la Gente, Surfea.",
   ft_age:"Alcohol servido y vendido solo a mayores de edad. Bebe con responsabilidad.",
@@ -448,7 +455,7 @@ pt:{
   fu_s2:"Estamos imediatamente à sua DIREITA, ao lado do supermercado, em frente ao Mira Surf.",
   fu_s3:"Olhe para cima — se houver uma mangueira sobre você, chegou.",
   fu_hours:"Aberto todos os dias, das 6h às 20h. El Tunco, La Libertad, El Salvador.",
-  su_kicker:"Fique por dentro", su_h2:"Entre para a crew da Mango Avenue", su_p:"Alertas de swell, eventos, degustações e pranchas novas — saiba primeiro.", su_name:"Nome", su_phone:"Telefone / WhatsApp", su_email:"E-mail", su_ig:"Instagram @", su_btn:"Pode me contar! 🤙",
+  su_kicker:"Contato · fique por dentro", su_h2:"Entre para a crew da Mango Avenue", su_p:"Alertas de swell, eventos, degustações e pranchas novas — saiba primeiro.", su_name:"Nome", su_phone:"Telefone / WhatsApp", su_email:"E-mail", su_ig:"Instagram @", su_btn:"Pode me contar! 🤙",
   fu_map_btn:"Como chegar no Google Maps →",
   ft_tag:"surf • café • vinho — Ame a Deus, Ame as Pessoas, Surfe.",
   ft_age:"Álcool servido e vendido apenas a maiores de idade. Beba com responsabilidade.",
@@ -488,7 +495,7 @@ fr:{
   fu_s2:"Nous sommes immédiatement à votre DROITE, à côté du supermarché, en face de Mira Surf.",
   fu_s3:"Levez les yeux — s'il y a un manguier au-dessus de vous, vous y êtes.",
   fu_hours:"Ouvert tous les jours de 6h à 20h. El Tunco, La Libertad, El Salvador.",
-  su_kicker:"Restez branché", su_h2:"Rejoignez la crew Mango Avenue", su_p:"Alertes houle, événements, dégustations et nouvelles planches — soyez les premiers informés.", su_name:"Nom", su_phone:"Téléphone / WhatsApp", su_email:"E-mail", su_ig:"Instagram @", su_btn:"Je m'inscris 🤙",
+  su_kicker:"Contact · restez branché", su_h2:"Rejoignez la crew Mango Avenue", su_p:"Alertes houle, événements, dégustations et nouvelles planches — soyez les premiers informés.", su_name:"Nom", su_phone:"Téléphone / WhatsApp", su_email:"E-mail", su_ig:"Instagram @", su_btn:"Je m'inscris 🤙",
   fu_map_btn:"Itinéraire dans Google Maps →",
   ft_tag:"surf • café • vin — De la première lumière au dernier verre.",
   ft_age:"Alcool servi et vendu uniquement aux personnes majeures. À consommer avec modération.",
@@ -528,7 +535,7 @@ de:{
   fu_s2:"Wir sind sofort auf der RECHTEN Seite, neben dem Supermarkt, gegenüber von Mira Surf.",
   fu_s3:"Schau nach oben — wenn über dir ein Mangobaum steht, bist du da.",
   fu_hours:"Täglich geöffnet von 6 bis 20 Uhr. El Tunco, La Libertad, El Salvador.",
-  su_kicker:"Bleib auf dem Laufenden", su_h2:"Werde Teil der Mango-Avenue-Crew", su_p:"Swell-Alarm, Events, Tastings und neue Boards — erfahr es zuerst.", su_name:"Name", su_phone:"Telefon / WhatsApp", su_email:"E-Mail", su_ig:"Instagram @", su_btn:"Ich bin dabei 🤙",
+  su_kicker:"Kontakt · bleib auf dem Laufenden", su_h2:"Werde Teil der Mango-Avenue-Crew", su_p:"Swell-Alarm, Events, Tastings und neue Boards — erfahr es zuerst.", su_name:"Name", su_phone:"Telefon / WhatsApp", su_email:"E-Mail", su_ig:"Instagram @", su_btn:"Ich bin dabei 🤙",
   fu_map_btn:"Route in Google Maps →",
   ft_tag:"Surf • Kaffee • Wein — Vom ersten Licht bis zum letzten Glas.",
   ft_age:"Alkohol wird nur an Volljährige ausgeschenkt und verkauft. Bitte verantwortungsvoll genießen.",
