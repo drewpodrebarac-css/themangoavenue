@@ -54,6 +54,12 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.92);backdrop-f
 .langs{display:flex;gap:.25rem;margin-left:auto}
 .swell{display:block;font-size:.88rem;font-weight:800;color:var(--sunset);margin-top:.4rem}
 .card .fc{font-weight:700;text-decoration:none;font-size:.85rem;color:var(--ocean-deep);margin-top:.45rem;display:inline-block}
+.pourlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.8rem;background:#fff;border:1px solid var(--line);border-radius:1.2rem;padding:2rem;max-width:820px;margin:1.8rem auto 0;text-align:left;box-shadow:0 10px 28px rgba(200,120,50,.12)}
+.pourlist h3{color:var(--mango-deep);font-size:1rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.6rem}
+.pour{display:flex;align-items:baseline;gap:.5rem;padding:.32rem 0}
+.pour .nm{font-weight:600}
+.pour .dots{flex:1;border-bottom:2px dotted var(--line)}
+.pour .pr{font-weight:800;color:var(--palm)}
 .foodtags{font-size:.8rem;font-weight:700;color:var(--ocean-deep);letter-spacing:.02em}
 .price{display:inline-block;align-self:flex-start;font-weight:800;color:var(--palm);background:var(--sand);border-radius:2rem;padding:.2rem .75rem;font-size:.92rem}
 .break-badge{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-radius:2rem;padding:.22rem .65rem;background:var(--sand);color:var(--ocean-deep);margin-bottom:.35rem}
@@ -257,7 +263,7 @@ footer a{color:var(--mango)}
         <div class="card-body">
           <h3 data-i18n="c5_h">Wine &amp; spirits</h3>
           <p data-i18n="c5_p">A properly curated shelf of wine and spirits — chosen by the family behind one of the largest liquor stores in the Carolinas (USA).</p>
-          <a data-i18n="c5_a" href="#contact">See the shelf →</a>
+          <a data-i18n="c5_a" href="#pours">See the shelf →</a>
         </div>
       </div>
       <div class="card">
@@ -269,6 +275,34 @@ footer a{color:var(--mango)}
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<section id="pours" style="background:linear-gradient(180deg,#FFFDF8,#FFF0DC)">
+  <div class="in" style="text-align:center">
+    <p class="sec-kicker" data-i18n="menu_kicker">The pour list</p>
+    <h2 data-i18n="menu_h2">Sunset pours</h2>
+    <p class="lead" data-i18n="menu_lead" style="margin:0 auto">"From first light to last glass" — this is the last-glass part. Pull up a chair under the mango tree.</p>
+    <div class="pourlist">
+      <div>
+        <h3 data-i18n="menu_col1">🥃 Bourbon &amp; whiskey</h3>
+        <div class="pour"><span class="nm">Maker's Mark</span><span class="dots"></span><span class="pr">$15</span></div>
+        <div class="pour"><span class="nm">Woodford Reserve</span><span class="dots"></span><span class="pr">$15</span></div>
+        <div class="pour"><span class="nm">Angel's Envy</span><span class="dots"></span><span class="pr">$22</span></div>
+        <div class="pour"><span class="nm">Early Times</span><span class="dots"></span><span class="pr">$10</span></div>
+      </div>
+      <div>
+        <h3 data-i18n="menu_col2">🌵 Tequila &amp; gin</h3>
+        <div class="pour"><span class="nm">Terralta Silver</span><span class="dots"></span><span class="pr">$15</span></div>
+        <div class="pour"><span class="nm">Terralta Reposado</span><span class="dots"></span><span class="pr">$18</span></div>
+        <div class="pour"><span class="nm">Terralta Añejo</span><span class="dots"></span><span class="pr">$20</span></div>
+        <div class="pour"><span class="nm">Corazón Reposado</span><span class="dots"></span><span class="pr">$15</span></div>
+        <div class="pour"><span class="nm">San Matías Gran Reserva</span><span class="dots"></span><span class="pr">$25</span></div>
+        <div class="pour"><span class="nm">St. George Botanivore Gin</span><span class="dots"></span><span class="pr">$10</span></div>
+      </div>
+    </div>
+    <p class="foodtags" style="margin-top:1rem" data-i18n="menu_note">All pours 1.5 oz — ask us about the wine list 🍷</p>
   </div>
 </section>
 
@@ -397,7 +431,7 @@ en:{
   hero_sub:"Surf shop, board rentals & coffee in the heart of El Tunco, El Salvador",
   hero_cta1:"Book a surf lesson", hero_cta2:"Rent a board",
   strip_breaks:"La Bocana: 45-sec walk · El Sunzal: 10 min", strip_hours:"Open daily 6 AM – 8 PM", strip_loc:"Town entrance, first shop on your right",
-  svc_kicker:"What we do", svc_h2:"Good waves, good coffee, good people — every single day",
+  menu_kicker:"The pour list", menu_h2:"Sunset pours", menu_lead:"\u201cFrom first light to last glass\u201d — this is the last-glass part. Pull up a chair under the mango tree.", menu_col1:"🥃 Bourbon & whiskey", menu_col2:"🌵 Tequila & gin", menu_note:"All pours 1.5 oz — ask us about the wine list 🍷", svc_kicker:"What we do", svc_h2:"Good waves, good coffee, good people — every single day",
   svc_lead:"Warm water and waves 365 days a year. One shop at the entrance of El Tunco: boards, lessons, a photographer in the water, matcha and real Salvadoran coffee — and a glass of wine when the sun drops.",
   c1_h:"Surfboard rentals", c1_price:"$10–$30 / day", c1_p:"Shortboards, longboards and soft-tops, by the hour or by the day. Walk in, grab a board — the beach is right there. Or don't walk at all: white-glove board delivery straight to the sand.", c1_a:"Reserve a board →",
   c2_h:"Surf lessons", c2_price:"$50–$100 · depends on group size", c2_p:"Learn to surf in El Tunco with local instructors who grew up on these waves — beginners welcome, private and group classes.", c2_a:"Book a lesson →",
@@ -438,7 +472,7 @@ es:{
   hero_sub:"Surf shop, alquiler de tablas y café en el corazón de El Tunco, El Salvador",
   hero_cta1:"Reserva una clase de surf", hero_cta2:"Alquila una tabla",
   strip_breaks:"La Bocana: a 45 seg a pie · El Sunzal: a 10 min", strip_hours:"Abierto todos los días 6 AM – 8 PM", strip_loc:"En la entrada del pueblo, primera tienda a tu derecha",
-  svc_kicker:"Qué hacemos", svc_h2:"Buenas olas, buen café, buena gente — todos los días",
+  menu_kicker:"La carta de tragos", menu_h2:"Tragos al atardecer", menu_lead:"\u201cDe la primera luz a la última copa\u201d — esta es la parte de la última copa. Acércate una silla bajo el árbol de mango.", menu_col1:"🥃 Bourbon y whiskey", menu_col2:"🌵 Tequila y gin", menu_note:"Todos los tragos de 1.5 oz — pregunta por la carta de vinos 🍷", svc_kicker:"Qué hacemos", svc_h2:"Buenas olas, buen café, buena gente — todos los días",
   svc_lead:"Agua cálida y olas los 365 días del año. Una sola tienda en la entrada de El Tunco: tablas, clases, fotógrafo en el agua, matcha y café salvadoreño de verdad — y una copa de vino cuando cae el sol.",
   c1_h:"Alquiler de tablas de surf", c1_price:"$10–$30 / día", c1_p:"Shortboards, longboards y soft-tops, por hora o por día. Entra, agarra tu tabla — la playa está ahí mismo. O no camines nada: entrega de guante blanco directo a la arena.", c1_a:"Reserva tu tabla →",
   c2_h:"Clases de surf", c2_price:"$50–$100 · según el tamaño del grupo", c2_p:"Aprende a surfear en El Tunco con instructores locales que crecieron en estas olas — principiantes bienvenidos, clases privadas y en grupo.", c2_a:"Reserva una clase →",
@@ -479,7 +513,7 @@ pt:{
   hero_sub:"Surf shop, aluguel de pranchas e café no coração de El Tunco, El Salvador",
   hero_cta1:"Reserve uma aula de surf", hero_cta2:"Alugue uma prancha",
   strip_breaks:"La Bocana: 45 s a pé · El Sunzal: 10 min", strip_hours:"Aberto todos os dias, 6h – 20h", strip_loc:"Na entrada da vila, primeira loja à sua direita",
-  svc_kicker:"O que fazemos", svc_h2:"Boas ondas, bom café, boa gente — todos os dias",
+  menu_kicker:"A carta de doses", menu_h2:"Doses ao pôr do sol", menu_lead:"\u201cDa primeira luz ao último gole\u201d — esta é a parte do último gole. Puxe uma cadeira para debaixo da mangueira.", menu_col1:"🥃 Bourbon e uísque", menu_col2:"🌵 Tequila e gim", menu_note:"Todas as doses de 1,5 oz — pergunte pela carta de vinhos 🍷", svc_kicker:"O que fazemos", svc_h2:"Boas ondas, bom café, boa gente — todos os dias",
   svc_lead:"Água quente e ondas 365 dias por ano. Uma única loja na entrada de El Tunco: pranchas, aulas, fotógrafo na água, matcha e café salvadorenho de verdade — e uma taça de vinho quando o sol se põe.",
   c1_h:"Aluguel de pranchas", c1_price:"$10–$30 / dia", c1_p:"Shortboards, longboards e soft-tops, por hora ou por dia. Entre, pegue sua prancha — a praia está logo ali. Ou nem caminhe: entrega de luva branca direto na areia.", c1_a:"Reserve sua prancha →",
   c2_h:"Aulas de surf", c2_price:"$50–$100 · conforme o tamanho do grupo", c2_p:"Aprenda a surfar em El Tunco com instrutores locais que cresceram nessas ondas — iniciantes bem-vindos, aulas particulares e em grupo.", c2_a:"Reserve uma aula →",
@@ -520,7 +554,7 @@ fr:{
   hero_sub:"Surf shop, location de planches et café au cœur d'El Tunco, El Salvador",
   hero_cta1:"Réserver un cours de surf", hero_cta2:"Louer une planche",
   strip_breaks:"La Bocana : 45 s à pied · El Sunzal : 10 min", strip_hours:"Ouvert tous les jours, 6h – 20h", strip_loc:"À l'entrée du village, première boutique à droite",
-  svc_kicker:"Ce qu'on fait", svc_h2:"De bonnes vagues, du bon café, des gens heureux — tous les jours",
+  menu_kicker:"La carte des verres", menu_h2:"Verres au coucher du soleil", menu_lead:"\u00ab De la première lumière au dernier verre \u00bb — voici la partie dernier verre. Prenez une chaise sous le manguier.", menu_col1:"🥃 Bourbon & whiskey", menu_col2:"🌵 Tequila & gin", menu_note:"Tous les verres : 1,5 oz — demandez la carte des vins 🍷", svc_kicker:"Ce qu'on fait", svc_h2:"De bonnes vagues, du bon café, des gens heureux — tous les jours",
   svc_lead:"Eau chaude et vagues 365 jours par an. Une seule boutique à l'entrée d'El Tunco : planches, cours, photographe dans l'eau, matcha et vrai café salvadorien — et un verre de vin au coucher du soleil.",
   c1_h:"Location de planches", c1_price:"10–30 $ / jour", c1_p:"Shortboards, longboards et soft-tops, à l'heure ou à la journée. Entrez, prenez une planche — la plage est juste là. Ou ne marchez même pas : livraison gants blancs jusque sur le sable.", c1_a:"Réserver une planche →",
   c2_h:"Cours de surf", c2_price:"50–100 $ · selon la taille du groupe", c2_p:"Apprenez à surfer à El Tunco avec des instructeurs locaux qui ont grandi sur ces vagues — débutants bienvenus, cours privés ou en groupe.", c2_a:"Réserver un cours →",
@@ -561,7 +595,7 @@ de:{
   hero_sub:"Surfshop, Boardverleih & Kaffee im Herzen von El Tunco, El Salvador",
   hero_cta1:"Surfstunde buchen", hero_cta2:"Board mieten",
   strip_breaks:"La Bocana: 45 Sek. zu Fuß · El Sunzal: 10 Min.", strip_hours:"Täglich geöffnet, 6 – 20 Uhr", strip_loc:"Am Ortseingang, erster Laden rechts",
-  svc_kicker:"Was wir machen", svc_h2:"Gute Wellen, guter Kaffee, gute Leute — jeden einzelnen Tag",
+  menu_kicker:"Die Ausschankkarte", menu_h2:"Drinks zum Sonnenuntergang", menu_lead:"\u201eVom ersten Licht bis zum letzten Glas\u201c — das hier ist das letzte Glas. Zieh dir einen Stuhl unter den Mangobaum.", menu_col1:"🥃 Bourbon & Whiskey", menu_col2:"🌵 Tequila & Gin", menu_note:"Alle Drinks 1,5 oz — frag nach der Weinkarte 🍷", svc_kicker:"Was wir machen", svc_h2:"Gute Wellen, guter Kaffee, gute Leute — jeden einzelnen Tag",
   svc_lead:"Warmes Wasser und Wellen an 365 Tagen im Jahr. Ein Laden am Eingang von El Tunco: Boards, Surfkurse, ein Fotograf im Wasser, Matcha und echter salvadorianischer Kaffee — und ein Glas Wein zum Sonnenuntergang.",
   c1_h:"Surfboard-Verleih", c1_price:"10–30 $ / Tag", c1_p:"Shortboards, Longboards und Soft-Tops, stunden- oder tageweise. Reinkommen, Board schnappen — der Strand ist direkt da. Oder lauf gar nicht erst: White-Glove-Lieferung direkt in den Sand.", c1_a:"Board reservieren →",
   c2_h:"Surfkurse", c2_price:"50–100 $ · je nach Gruppengröße", c2_p:"Surfen lernen in El Tunco mit lokalen Lehrern, die auf diesen Wellen aufgewachsen sind — Anfänger willkommen, privat oder in der Gruppe.", c2_a:"Kurs buchen →",
